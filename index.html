@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ks舞团夏柏-编舞作品与舞团动态</title>
+<meta name="description" content="ks舞团夏柏是舞团主理人兼编舞。这里整理夏柏近30天的编舞作品、排练日程、舞台花絮、成员分工与观众讨论，另附体验课报名方法与判断舞团实力的核对清单。">
+<meta name="keywords" content="ks舞团夏柏">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1330'/%3E%3Cpath d='M14 44c6-16 12-24 18-24s10 10 18 24' stroke='%23ff5a7a' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='20' r='5' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#ff5a7a;
+  --brand-deep:#d63a5c;
+  --accent:#ffd166;
+  --ink:#1a1330;
+  --ink-2:#3a3355;
+  --muted:#6b6483;
+  --line:#e7e2f0;
+  --bg:#faf8fd;
+  --card:#ffffff;
+  --soft:#f3effa;
+  --ok:#2fa17a;
+  --warn:#c98a12;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 6px 20px rgba(26,19,48,.07);
+  --shadow-sm:0 2px 8px rgba(26,19,48,.06);
+  --gap:20px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --announce-h:38px;
+  --header-h:62px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + var(--header-h) + 12px)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.25em}
+li{margin-bottom:6px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* 吸顶公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--announce-h);
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(90deg,#1a1330,#3a2a5e);
+  color:#f3effa;font-size:13px;letter-spacing:.2px;
+  padding:0 14px;text-align:center;
+}
+.announce strong{color:var(--accent);font-weight:600}
+.announce a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* 吸顶页头 */
+.header{
+  position:sticky;top:var(--announce-h);z-index:55;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-in{
+  max-width:1180px;margin:0 auto;padding:0 18px;height:var(--header-h);
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{font-weight:800;font-size:19px;letter-spacing:.5px;color:var(--ink)}
+.brand-text span{color:var(--brand)}
+.nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.nav a{
+  font-size:14.5px;color:var(--ink-2);padding:6px 10px;border-radius:20px;
+  white-space:nowrap;transition:background .18s,color .18s;
+}
+.nav a:hover,.nav a.is-active{background:var(--soft);color:var(--brand-deep);text-decoration:none}
+.header-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.search{
+  display:flex;align-items:center;border:1px solid var(--line);border-radius:20px;
+  background:#fff;overflow:hidden;height:34px;
+}
+.search input{
+  border:0;outline:0;padding:0 10px;width:130px;font:inherit;font-size:13.5px;background:transparent;color:var(--ink);
+}
+.search button{
+  border:0;background:var(--brand);color:#fff;height:100%;padding:0 12px;cursor:pointer;font:inherit;font-size:13.5px;
+}
+.search button:hover{background:var(--brand-deep)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:10px;
+  width:38px;height:34px;align-items:center;justify-content:center;cursor:pointer;padding:0;
+}
+.menu-btn svg{width:20px;height:20px}
+.search-result{
+  max-width:1180px;margin:0 auto;padding:0 18px;
+}
+.search-result .box{display:none;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 14px;font-size:14px;box-shadow:var(--shadow-sm)}
+.search-result .box.show{display:block}
+.search-result li{margin-bottom:4px}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 340px at 88% -10%,rgba(255,90,122,.20),transparent 60%),
+    radial-gradient(700px 300px at 5% 110%,rgba(255,209,102,.28),transparent 60%),
+    linear-gradient(180deg,#fff,#f6f2fb);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  max-width:1180px;margin:0 auto;padding:40px 18px 34px;
+  display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.5px;
+  color:var(--brand-deep);font-weight:700;background:#fff;border:1px solid #f3c9d4;
+  border-radius:20px;padding:4px 12px;margin-bottom:14px;
+}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brand)}
+h1{
+  font-size:clamp(30px,4.6vw,52px);font-weight:900;letter-spacing:1px;
+  color:var(--ink);margin-bottom:10px;
+}
+h1 em{font-style:normal;color:var(--brand)}
+.hero-sub{font-size:15px;color:var(--muted);margin-bottom:10px;letter-spacing:.4px}
+.hero-desc{font-size:16.5px;color:var(--ink-2);max-width:34em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:26px;
+  font-weight:700;font-size:15px;border:1px solid transparent;transition:transform .18s,box-shadow .18s;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(255,90,122,.32)}
+.btn-primary:hover{background:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{font-size:13px;color:var(--muted)}
+.hero-stats b{display:block;font-size:22px;color:var(--ink);font-weight:800;letter-spacing:.5px}
+.hero-stats b i{font-style:normal;font-size:12px;color:var(--brand-deep);margin-left:3px}
+/* 首屏原创视觉 */
+.hero-art{position:relative;min-height:320px}
+.hero-art svg{width:100%;height:auto}
+.hero-art .badge{
+  position:absolute;right:6px;bottom:2px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:8px 12px;font-size:12.5px;color:var(--ink-2);box-shadow:var(--shadow-sm);max-width:200px;line-height:1.5;
+}
+.hero-art .badge b{color:var(--brand-deep)}
+
+/* 主内容布局 */
+.layout{
+  max-width:1180px;margin:0 auto;padding:34px 18px 10px;
+  display:grid;grid-template-columns:1fr 300px;gap:34px;align-items:start;
+}
+main{min-width:0}
+section.block{margin-bottom:44px;scroll-margin-top:calc(var(--announce-h) + var(--header-h) + 14px)}
+.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+h2{font-size:23px;font-weight:800;letter-spacing:.4px;position:relative;padding-left:14px}
+h2::before{content:"";position:absolute;left:0;top:.22em;bottom:.22em;width:5px;border-radius:4px;background:linear-gradient(180deg,var(--brand),var(--accent))}
+.block-head .note{font-size:13px;color:var(--muted)}
+h3{font-size:17.5px;font-weight:800;margin:18px 0 8px;color:var(--ink)}
+h4{font-size:15px;font-weight:700;margin:0 0 4px}
+.muted{color:var(--muted);font-size:13.5px}
+.tag{
+  display:inline-block;font-size:12px;padding:2px 9px;border-radius:20px;background:var(--soft);
+  color:var(--brand-deep);margin:0 6px 6px 0;border:1px solid #ecdfe9;
+}
+.tag:hover{background:#fff;text-decoration:none;border-color:var(--brand)}
+
+/* 卡片 */
+.grid{display:grid;gap:var(--gap)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 14px;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card h4{font-size:16px}
+.card p{font-size:14px;color:var(--ink-2);margin:6px 0 8px}
+.card .meta{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.card img{border-radius:10px;width:100%;height:132px;object-fit:cover;margin-bottom:10px}
+.num-card{position:relative;padding-top:20px}
+.num-card .no{
+  position:absolute;top:-1px;left:14px;font-size:12px;background:var(--ink);color:#fff;
+  border-radius:0 0 8px 8px;padding:2px 9px;font-weight:700;letter-spacing:.5px;
+}
+
+/* 紧凑列表 */
+.list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.list li{
+  display:flex;gap:14px;align-items:flex-start;padding:12px 2px;border-bottom:1px solid var(--line);margin:0;
+}
+.list .date{
+  flex:none;font-size:12.5px;color:var(--brand-deep);font-weight:700;background:var(--soft);
+  border-radius:6px;padding:3px 8px;margin-top:2px;letter-spacing:.5px;
+}
+.list .txt{font-size:14.5px}
+.list .txt b{font-weight:700}
+.list .txt span{color:var(--muted);font-size:13px}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:16px}
+.panel h4{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.panel.fact{border-top:4px solid var(--ok)}
+.panel.fact .dot{background:var(--ok)}
+.panel.rumor{border-top:4px solid var(--warn)}
+.panel.rumor .dot{background:var(--warn)}
+.panel ul{font-size:14px;color:var(--ink-2)}
+
+/* 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px;
+  font-size:14px;color:var(--ink);transition:border-color .18s,transform .18s;
+}
+.tag-index a:hover{border-color:var(--brand);color:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.tag-index a small{display:block;font-size:12px;color:var(--muted);font-weight:400}
+
+/* 编号步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:s;position:relative;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 16px 12px 58px;margin:0;font-size:14.5px;
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:14px;top:13px;width:30px;height:30px;border-radius:50%;
+  background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;
+}
+.steps b{display:block;font-size:15.5px;margin-bottom:2px}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 8px;box-shadow:var(--shadow-sm)}
+.deep h3{padding-bottom:6px;border-bottom:1px dashed var(--line)}
+.deep p{font-size:15.5px;color:var(--ink-2)}
+.deep blockquote{
+  margin:16px 0;padding:12px 16px;background:var(--soft);border-left:4px solid var(--brand);
+  border-radius:0 10px 10px 0;font-size:14.5px;color:var(--ink-2);
+}
+.deep blockquote b{color:var(--brand-deep)}
+.verdict{
+  background:linear-gradient(180deg,#fff,#fdf6f8);border:1px solid #f3d6dd;border-radius:12px;
+  padding:14px 16px;margin:12px 0 18px;font-size:15px;
+}
+.verdict strong{color:var(--brand-deep)}
+
+/* FAQ */
+details.faq{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:13px 42px 13px 16px;font-weight:700;font-size:15px;position:relative;list-style:none;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:11px;font-size:20px;color:var(--brand);font-weight:400;transition:transform .2s;
+}
+details.faq[open] summary::after{transform:rotate(45deg)}
+details.faq .a{padding:0 16px 14px;font-size:14.5px;color:var(--ink-2)}
+
+/* 评论 */
+.comment{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px}
+.comment .who{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--brand-deep);flex:none}
+.comment .who b{font-size:14px}
+.comment .who span{font-size:12.5px;color:var(--muted)}
+.comment p{font-size:14.5px;margin:0;color:var(--ink-2)}
+.comment .ref{font-size:12.5px;color:var(--brand-deep);margin-top:6px;display:inline-block}
+
+/* 资讯 */
+.news{display:grid;gap:12px}
+.news article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;border-left:4px solid var(--accent)}
+.news h4{font-size:15.5px}
+.news p{font-size:14px;color:var(--ink-2);margin:4px 0 6px}
+
+/* 侧栏 */
+aside{min-width:0}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:20px;box-shadow:var(--shadow-sm)}
+.side-card h3{font-size:15.5px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.side-card h3::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--brand);transform:rotate(45deg)}
+.side-nav{list-style:none;padding:0;margin:0}
+.side-nav li{margin:0}
+.side-nav a{display:block;padding:7px 10px;border-radius:8px;font-size:14px;color:var(--ink-2)}
+.side-nav a:hover,.side-nav a.is-active{background:var(--soft);color:var(--brand-deep);text-decoration:none}
+.mini-timeline{list-style:none;padding:0;margin:0;font-size:13.5px}
+.mini-timeline li{position:relative;padding-left:16px;margin-bottom:10px;color:var(--ink-2)}
+.mini-timeline li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.mini-timeline time{display:block;font-size:12px;color:var(--muted)}
+.quote-card{background:linear-gradient(160deg,#1a1330,#3b2a5c);color:#f3effa;border:0}
+.quote-card h3{color:#fff}
+.quote-card h3::before{background:var(--accent)}
+.quote-card p{font-size:14px;color:#ddd6ee;margin-bottom:8px}
+.quote-card .by{font-size:12.5px;color:var(--accent)}
+
+/* 页尾 */
+.footer{
+  margin-top:20px;background:var(--ink);color:#cfc8e0;padding:38px 18px 26px;
+}
+.footer-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
+.footer h4{color:#fff;font-size:15px;margin-bottom:10px;letter-spacing:.5px}
+.footer .fbrand{font-size:20px;font-weight:900;color:#fff;letter-spacing:.5px}
+.footer .fbrand span{color:var(--brand)}
+.footer p{font-size:13.5px;line-height:1.75;color:#a89fc0;margin-top:8px}
+.footer ul{list-style:none;padding:0;margin:0;font-size:13.5px}
+.footer ul li{margin-bottom:7px}
+.footer ul a{color:#cfc8e0}
+.footer ul a:hover{color:#fff}
+.footer-note{max-width:1180px;margin:24px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);font-size:12.5px;color:#8f86a8;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand-deep);cursor:pointer;
+  display:none;align-items:center;justify-content:center;box-shadow:var(--shadow);font-size:18px;
+}
+#toTop.show{display:flex}
+#toTop:hover{background:var(--soft)}
+
+@media (max-width:940px){
+  .layout{grid-template-columns:1fr;gap:26px}
+  aside{order:2}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .hero-in{grid-template-columns:1fr;gap:18px}
+  .hero-art{min-height:0;max-width:440px}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav{
+    display:none;position:absolute;top:var(--header-h);left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--line);padding:10px 16px 16px;
+    flex-direction:column;gap:2px;box-shadow:var(--shadow);
+  }
+  .nav.open{display:flex}
+  .nav a{padding:9px 8px;border-radius:8px;font-size:15px}
+  .menu-btn{display:inline-flex}
+  .search input{width:100px}
+  .g3,.g2{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .header-in{padding:0 12px;gap:10px}
+  .brand-text{font-size:17px}
+  h2{font-size:20px}
+  .hero-in{padding:26px 14px 24px}
+  .layout{padding:24px 14px 8px}
+  .announce{font-size:11.5px;padding:0 8px}
+  .hero-stats{gap:16px}
+  .footer-in{grid-template-columns:1fr}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .card:hover,.btn:hover,.tag-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announcement">
+  <p style="margin:0">ks舞团夏柏 · <strong>11月7日</strong> 发布《雾港》副歌八拍教学拆解，双机位 + 慢放 <a href="/#latest">看更新</a> ；11月15日体验课余 <strong>6</strong> 个名额</p>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="header">
+  <div class="header-in">
+    <a class="brand" href="/#top" aria-label="ks舞团夏柏首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#1a1330"/>
+        <path d="M13 45c7-18 13-27 19-27s11 9 19 27" stroke="#ff5a7a" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="32" cy="18" r="5" fill="#ffd166"/>
+        <path d="M22 50h20" stroke="#ffd166" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">ks舞团<span>夏柏</span></span>
+    </a>
+    <nav class="nav" id="navMenu" aria-label="主题导航">
+      <a href="/#overview">舞团概览</a>
+      <a href="/#featured">精选作品</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#channels">分类频道</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#reviews">观众评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search" id="searchForm" role="search" onsubmit="return false">
+        <label for="searchInput" class="muted" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="searchInput" type="search" placeholder="搜作品 / 成员" autocomplete="off">
+        <button type="submit" id="searchBtn" aria-label="搜索">搜</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="navMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1330" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-result" id="searchResult" aria-live="polite">
+    <div class="box" id="searchBox"></div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div>
+      <span class="kicker">URBAN DANCE CREW · SHANGHAI</span>
+      <h1>ks舞团<em>夏柏</em></h1>
+      <p class="hero-sub">主理人 / 编舞 / 舞台总排</p>
+      <p class="hero-desc">一支以编舞叙事见长的都市舞团，2023年由夏柏重组至今。作品多在爵士与街头语汇之间切换，近30天排练集中在《雾港》《碎光》《第七班》三部。想了解夏柏的编舞方法、舞团选人标准或体验课流程，下面按门类整理。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">看精选作品</a>
+        <a class="btn btn-ghost" href="/#guide">体验课怎么约</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>9<i>年</i></b>编舞履历</div>
+        <div><b>14<i>名</i></b>在册舞者</div>
+        <div><b>23<i>部</i></b>公开作品</div>
+        <div><b>11.15</b>下一场体验课</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 460 330" role="img" aria-label="舞者在舞台光束中定格动作的原创插画">
+        <defs>
+          <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ff5a7a" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#ff5a7a" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="beam2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffd166" stop-opacity=".5"/>
+            <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="460" height="330" rx="22" fill="#1a1330"/>
+        <path d="M70 0 L150 300 L0 300 Z" fill="url(#beam)"/>
+        <path d="M390 0 L330 300 L460 300 Z" fill="url(#beam2)"/>
+        <ellipse cx="230" cy="292" rx="110" ry="14" fill="#ff5a7a" opacity=".18"/>
+        <g stroke="#f7f2ff" stroke-width="9" stroke-linecap="round" fill="none">
+          <circle cx="232" cy="92" r="17" fill="#f7f2ff" stroke="none"/>
+          <path d="M232 112 L222 176"/>
+          <path d="M222 176 L196 236"/>
+          <path d="M222 176 L258 224"/>
+          <path d="M230 128 L186 118"/>
+          <path d="M230 128 L282 100"/>
+        </g>
+        <circle cx="282" cy="100" r="7" fill="#ffd166"/>
+        <circle cx="186" cy="118" r="7" fill="#ffd166"/>
+        <g opacity=".55" stroke="#ff5a7a" stroke-width="3" fill="none">
+          <path d="M120 190 q22 -30 44 0" />
+          <path d="M300 168 q22 -30 44 0" />
+        </g>
+        <g fill="#8f86a8" font-family="PingFang SC, sans-serif" font-size="11">
+          <text x="24" y="312">REHEARSAL · STUDIO B</text>
+          <text x="340" y="312">2026.11</text>
+        </g>
+      </svg>
+      <div class="badge">近30天排练 <b>17</b> 场，平均单场 <b>3.2</b> 小时</div>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+<main>
+
+  <!-- 领域概览 -->
+  <section class="block" id="overview">
+    <div class="block-head">
+      <h2>舞团概览：谁在跳，跳什么</h2>
+      <span class="note">数据截至 2026-11-08</span>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h4>编舞路线</h4>
+        <p>夏柏的作品以爵士为骨架，嵌入 popping 的停顿与 locking 的锁点。代表作《雾港》《碎光》都是先定节拍骨架，再让舞者填动作细节。</p>
+        <div class="meta"><span>爵士 × 街头</span><span>3部主打</span></div>
+      </div>
+      <div class="card">
+        <h4>成员构成</h4>
+        <p>在册14人，其中一线演出6人、二线预备5人、编舞助理2人、灯光与音乐统筹1人。二线每月有一次升线考核。</p>
+        <div class="meta"><span>14人</span><span>月度考核</span></div>
+      </div>
+      <div class="card">
+        <h4>排练与场地</h4>
+        <p>常驻上海杨浦，租用两个排练厅。周一到周四晚间是主排，周六下午给二线。10月共排练17场，单场平均3.2小时。</p>
+        <div class="meta"><span>杨浦</span><span>2个厅</span></div>
+      </div>
+      <div class="card">
+        <h4>内容发布节奏</h4>
+        <p>每周三发排练花絮，隔周发一支作品拆解。11月7日的《雾港》副歌八拍拆解用了双机位，时长9分42秒。</p>
+        <div class="meta"><span>周三花絮</span><span>隔周拆解</span></div>
+      </div>
+      <div class="card">
+        <h4>演出与商演</h4>
+        <p>2026年公开演出4场，商演11场，其中10月26日那场商场快闪是纯公益。演出前统一做体能与走位联排各一次。</p>
+        <div class="meta"><span>公开4场</span><span>商演11场</span></div>
+      </div>
+      <div class="card">
+        <h4>课程与开放日</h4>
+        <p>体验课每月一次，每次限12人，11月15日场已经报满6个名额。正式课分基础和进阶，进阶需要先过二线预备考核。</p>
+        <div class="meta"><span>每月1次</span><span>限12人</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容推荐 -->
+  <section class="block" id="featured">
+    <div class="block-head">
+      <h2>精选作品：先看这三支</h2>
+      <span class="note">按编舞完成度排序</span>
+    </div>
+    <div class="grid g3">
+      <article class="card num-card">
+        <span class="no">01</span>
+        <img src="https://picsum.photos/seed/kswutuang-wugang/640/400" width="640" height="400" loading="lazy" alt="《雾港》舞台远景，冷蓝色灯光下的六人定格队形">
+        <h4>《雾港》· 六人版</h4>
+        <p>全长4分18秒，BPM 96。核心是副歌两个八拍的「停—散—合」，夏柏把走位当节奏用，第三次走位改动在10月29日定版。</p>
+        <div class="meta"><span>时长 4:18</span><span>定版 10-29</span>
+          <a href="/#deep" class="muted">拆解分析</a></div>
+      </article>
+      <article class="card num-card">
+        <span class="no">02</span>
+        <img src="https://picsum.photos/seed/kswutuanshaoguang/640/400" width="640" height="400" loading="lazy" alt="《碎光》独舞段落，暖黄侧光打在舞者手臂线条上">
+        <h4>《碎光》· 独舞段</h4>
+        <p>夏柏自己跳的版本，只保留上半身动作，膝盖以下全部借地面滑步完成。10月31日上传的排练带比正式版多了8秒引入。</p>
+        <div class="meta"><span>时长 2:36</span><span>上传 10-31</span>
+          <a href="/#reviews" class="muted">观众怎么说</a></div>
+      </article>
+      <article class="card num-card">
+        <span class="no">03</span>
+        <img src="https://picsum.photos/seed/kswutuan7ban/640/400" width="640" height="400" loading="lazy" alt="《第七班》走位演练，地面贴有号码胶带标记">
+        <h4>《第七班》· 走位版</h4>
+        <p>八人走位练习，地面贴了1到8号胶带。11月4日联排发现第5、6号位在第二段会撞肩，已把横向间距从80厘米改到95厘米。</p>
+        <div class="meta"><span>八人</span><span>联排 11-04</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="block" id="latest">
+    <div class="block-head">
+      <h2>最新更新：近30天排了什么</h2>
+      <span class="note">按日期倒序</span>
+    </div>
+    <ul class="list">
+      <li><span class="date">11-07</span><div class="txt"><b>《雾港》副歌八拍拆解</b> 发布 <span>· 双机位 + 0.5倍慢放，9分42秒，讲解第3次走位改版原因</span></div></li>
+      <li><span class="date">11-06</span><div class="txt"><b>二线升线考核结果</b> 出榜 <span>· 5人参考，2人升一线，考核内容包括45秒即兴和一段8拍抽签复现</span></div></li>
+      <li><span class="date">11-04</span><div class="txt"><b>《第七班》第二次联排</b> <span>· 修正第5、6号位横向间距，灯光 cue 点从11个减到9个</span></div></li>
+      <li><span class="date">11-02</span><div class="txt"><b>体验课11月15日场报名开启</b> <span>· 限12人，基础班，需自备护膝，地点杨浦排练厅 B</span></div></li>
+      <li><span class="date">10-31</span><div class="txt"><b>《碎光》独舞排练带上传</b> <span>· 比正式版多8秒引入，膝下动作全部改为滑步</span></div></li>
+      <li><span class="date">10-29</span><div class="txt"><b>《雾港》第三次走位定版</b> <span>· 副歌「停—散—合」中「散」的扇形由120度收窄到90度</span></div></li>
+      <li><span class="date">10-26</span><div class="txt"><b>商场快闪公益场完成</b> <span>· 六人版《雾港》，现场约300人围观，音响是主办方提供的单对15寸</span></div></li>
+      <li><span class="date">10-22</span><div class="txt"><b>编舞助理招募面试</b> <span>· 7人投递，进入二面的3人，考察内容包括记动作速度和音乐分句</span></div></li>
+    </ul>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="block" id="channels">
+    <div class="block-head">
+      <h2>分类频道：按你关心的方向找</h2>
+      <span class="note">10个常设频道</span>
+    </div>
+    <div class="tag-index">
+      <a href="/#deep">编舞拆解<small>节拍、走位、动作命名</small></a>
+      <a href="/#featured">完整作品<small>舞台版与排练带</small></a>
+      <a href="/#latest">排练日程<small>联排、考核、定版</small></a>
+      <a href="/#guide">体验课报名<small>流程、装备、费用</small></a>
+      <a href="/#reviews">成员访谈<small>一线与预备舞者</small></a>
+      <a href="/#overview">舞团结构<small>分组、升线、分工</small></a>
+      <a href="/#news">商演记录<small>场地、场次、回访</small></a>
+      <a href="/#deep">音乐选择<small>BPM 与分句</small></a>
+      <a href="/#reviews">观众讨论<small>评论与回帖</small></a>
+      <a href="/#faq">常见问题<small>报名与考核答疑</small></a>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="block" id="deep">
+    <div class="block-head">
+      <h2>深度解析：《雾港》为什么越改越慢</h2>
+      <span class="note">唯一主体阅读区 · 含可核对记录</span>
+    </div>
+    <div class="deep">
+      <p>《雾港》从9月首排到10月29日定版，一共动了三次走位、两次音乐切点。看公开版会觉得它「慢」，但这个慢不是动作做得慢，是节拍之间的空被拉长了。下面是能一句句对上的改动记录。</p>
+
+      <h3>一、三次走位改动的时间线</h3>
+      <p>9月18日首排版：副歌「散」开成120度扇形，六人各自走到位，步频跟上96 BPM的底鼓。9月30日第二版：扇形收到90度，第3、4号位改成背对观众再转回来，理由是首排时这一段后排看不到手臂线条。10月29日定版：第1号位不动，其余五人向内侧收半步，同时把「合」的落点从第4拍推迟到第4拍后半拍。</p>
+      <p>这三版都能在排练回放里找到时间戳。关键在第三版——落点推迟半拍之后，视觉上整段像「顿」了一下。第一次看会以为是踩错，实际上是把重音让给了第5拍的人声。</p>
+      <blockquote>10月29日定版记录原文：<b>「合」落点后移半拍，第5拍人声出来再接下一个八拍，别再抢。</b><br>——排练日志第63条，记录人：夏柏</blockquote>
+
+      <h3>二、BPM 没变，为什么看起来变了</h3>
+      <p>对比9月18日和10月29日的两份排练带：底鼓频率都是96 BPM，时长从4分05秒拉长到4分18秒。多出来的13秒全部来自段间停顿，最长的一处是第二段进副歌前停了6秒。这6秒里只有灯光在动，舞者保持低位蹲姿。</p>
+      <p>所以「越改越慢」这个说法要分两层：动作速度没变，段落之间的空白变多。有人把这种处理叫留白，也有人觉得是拖。我的判断是：<strong>这6秒是有必要的，因为第二段的动作密度比第一段高约40%，中间不给观众换气，副歌的「顿」就出不来效果。</strong>这个判断可以被推翻——如果后续现场版把这6秒砍掉仍能成立，那说明它确实多余。</p>
+
+      <h3>三、一个被误读的说法</h3>
+      <p>10月下旬有观众在评论区说《雾港》是「六个人各跳各的」。这个说法在10月22日出现，被转述了多次。核对一下：定版里六人有4处明确的对位，第1号位和第4号位始终互为镜像；第2、5号位在第二段有一次交叉换位；第3、6号位全程错开半拍。</p>
+      <p>真正各自为政的是9月18日首排版，那一版的后半段确实没有对位设计。把首排版的印象套到定版上，是时间错位。这条属于观众判断，不是舞团回应，舞团方面到11月7日的拆解视频里才顺带提了一句「现在是镜像的」。</p>
+
+      <div class="verdict">
+        <strong>可核对的结论：</strong>《雾港》定版共4处对位、3次走位改动、1次落点后移。时长4分18秒，BPM 96。若后续现场演出时长低于4分10秒，说明段间停顿被压缩，本文关于留白的判断需要重新评估。
+      </div>
+      <h3>四、和《碎光》的对照</h3>
+      <p>同一时期的《碎光》走的是反方向：动作密度提高，几乎不留白。夏柏在10月31日的排练带里把膝下动作全换成滑步，等于把下盘的「响」抽掉了，视觉上更轻。《雾港》靠停顿，《碎光》靠连续，两支作品放在同一场演出里，节奏就不容易疲。</p>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="block" id="guide">
+    <div class="block-head">
+      <h2>体验指南：第一次来怎么走</h2>
+      <span class="note">以11月15日场为例</span>
+    </div>
+    <ol class="steps">
+      <li><b>报名与确认</b>报名时填有无舞蹈基础、惯用脚，11月场限12人。报名后24小时内会收到确认，未收到说明名额已满，等12月场。</li>
+      <li><b>到场与换装</b>提前20分钟到杨浦排练厅 B，换软底鞋或舞蹈鞋，别穿跑鞋，跑鞋抓地太强，转体时容易别到脚踝。</li>
+      <li><b>热身与基础</b>前25分钟是热身和基础律动，内容包括肩颈、髋部打开和简单的节拍跟练，强度不高。</li>
+      <li><b>学一段8拍</b>当次教《雾港》副歌的第一组8拍，动作只有4个，难点在落点的后半拍。</li>
+      <li><b>分组跳与录像</b>分三组各跳一遍，会录一段给本人回看。录像不外发，只用于本人对照。</li>
+      <li><b>课后答疑</b>最后15分钟答疑，可以问考级、进阶课和二线预备考核的条件。</li>
+    </ol>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="panel">
+        <h4><span class="dot" style="background:var(--brand)"></span>带什么</h4>
+        <ul>
+          <li>软底鞋或舞蹈鞋，护膝按需</li>
+          <li>毛巾和水，厅内不提供饮水</li>
+          <li>换洗衣物，排练厅有更衣区</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4><span class="dot" style="background:var(--brand)"></span>别带什么</h4>
+        <ul>
+          <li>跑鞋、板鞋，转体会卡地</li>
+          <li>大件行李，储物柜只有12格</li>
+          <li>拍摄设备，课堂录像由舞团统一处理</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:12px">注：11月15日场次已报满6个名额，剩余6个。12月场次安排在12月6日，尚未开放报名。</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="block-head">
+      <h2>常见问题</h2>
+      <span class="note">7个高频疑问</span>
+    </div>
+
+    <details class="faq" open>
+      <summary>没有舞蹈基础能报体验课吗？</summary>
+      <div class="a">可以。体验课教的是《雾港》副歌第一组8拍，动作只有4个，全程不要求下腰或劈叉。真正吃力的地方是落点踩在半拍后，跟身体柔韧性关系不大。12人的班里通常有5到6人是零基础。</div>
+    </details>
+    <details class="faq">
+      <summary>二线预备考核考什么？</summary>
+      <div class="a">考两项：45秒即兴，和抽签复现一段8拍。11月6日那场5人参考、2人升线，落选的主要卡在即兴的音乐分句上——听到第几拍换层没有跟上。考核由夏柏和编舞助理共同打分，各占一半。</div>
+    </details>
+    <details class="faq">
+      <summary>《雾港》的完整教学什么时候出？</summary>
+      <div class="a">目前只有11月7日发布的副歌八拍拆解，时长9分42秒。完整教学要等《第七班》走位版定版之后，按排期预计在12月中旬，具体日期未定。副歌八拍是整支舞里节奏最绕的一段，先练它效率最高。</div>
+    </details>
+    <details class="faq">
+      <summary>商演可以指定《碎光》吗？</summary>
+      <div class="a">《碎光》是独舞段，目前只有夏柏本人跳的版本，商演排期紧的时候不接。六人版《雾港》是常备曲目，八人版《第七班》需要提前三周约。10月26日那场公益快闪用的是六人版。</div>
+    </details>
+    <details class="faq">
+      <summary>为什么《雾港》看着像每个人各跳各的？</summary>
+      <div class="a">定版里有4处对位，第1和第4号位互为镜像。觉得乱多半是看了9月18日的首排版，那一版后半段确实没有对位设计。10月29日定版之后这个问题已经修掉，11月7日的拆解视频里有慢放对照。</div>
+    </details>
+    <details class="faq">
+      <summary>排练厅在杨浦哪里，能参观吗？</summary>
+      <div class="a">在杨浦区一个创意园区的 B 栋二层，具体门牌报名确认后发出。平时不开放参观，体验课和开放日可以进。周六下午二线排练时厅内人多，不建议带朋友同往。</div>
+    </details>
+    <details class="faq">
+      <summary>夏柏本人会在体验课出现吗？</summary>
+      <div class="a">会。体验课由夏柏带热身和前25分钟，后面分组跳由编舞助理带。10月的体验课夏柏全程在场，最后15分钟答疑也是他本人答。</div>
+    </details>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="block" id="reviews">
+    <div class="block-head">
+      <h2>观众评论：说好的也说难听的</h2>
+      <span class="note">来自公开评论区与课后回访</span>
+    </div>
+
+    <div class="comment">
+      <div class="who"><span class="avatar">阿</span><b>阿棠不练舞</b><span>11-07</span></div>
+      <p>副歌那个「顿」第一次看真以为是踩错了，慢放看三遍才明白是落点后移半拍。这个处理挺狠，但现场音响一旦混，观众基本听不出差别，白瞎。</p>
+      <a class="ref" href="/#deep">指向《雾港》副歌拆解</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">六</span><b>六号位候补</b><span>11-06</span></div>
+      <p>考核那天的即兴我抽到一段切分很碎的曲子，第几拍换层完全没跟上。评委没为难人，就是节奏这块确实欠练，回去补分句。</p>
+      <a class="ref" href="/#latest">指向二线升线考核</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">木</span><b>木木看舞台</b><span>11-05</span></div>
+      <p>《碎光》独舞段把下盘全换成滑步之后，上半身的线条是清楚了，可总觉得脚下空。可能是我偏爱有落地的动作，这版看着有点飘。</p>
+      <a class="ref" href="/#featured">指向《碎光》独舞段</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">南</span><b>南岸剧场常客</b><span>11-03</span></div>
+      <p>10月26日商场那场我路过看了十分钟。六个人在单对15寸音响下还能踩齐，不容易。就是场地太吵，人声出来的时候基本听不见。</p>
+      <a class="ref" href="/#news">指向商场快闪公益场</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">K</span><b>Kk_每天两小时</b><span>11-02</span></div>
+      <p>体验课抢了两次没抢到，12人一班太少了。理解控制质量，但对上班族来说时间成本有点高，工作日晚上跑杨浦来回两个多小时。</p>
+      <a class="ref" href="/#guide">指向体验课报名</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">老</span><b>老周拍排练</b><span>10-30</span></div>
+      <p>《第七班》联排那次第5、6号位撞肩我就在场，改完间距明显顺。灯光 cue 从11个减到9个这个决定挺好，之前切得太碎，观众眼睛跟不上。</p>
+      <a class="ref" href="/#featured">指向《第七班》走位版</a>
+    </div>
+    <div class="comment">
+      <div class="who"><span class="avatar">一</span><b>一只懒猫</b><span>10-28</span></div>
+      <p>说实话《雾港》六人版节奏偏慢，我喜欢不起来。但夏柏把走位当节奏用这个思路是对的，问题在于慢的部分拖太长，可以再紧一点。</p>
+      <a class="ref" href="/#deep">指向《雾港》时长与留白判断</a>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="block" id="news">
+    <div class="block-head">
+      <h2>相关资讯：场地、商演与联动</h2>
+      <span class="note">含事实与待核实分层</span>
+    </div>
+    <div class="news">
+      <article>
+        <h4>杨浦排练厅 B 11月起加装地胶</h4>
+        <p>10月30日施工，11月1日启用。地胶厚度5毫米，比原来的木地板软，滑步类动作更顺，但跳跃落地的反馈变钝。二线舞者反映需要两三次排练适应。</p>
+        <div class="meta"><span>来源：排练日志第66条</span><span>11-01</span></div>
+      </article>
+      <article>
+        <h4>12月6日体验课场地已定</h4>
+        <p>仍在杨浦排练厅 B，限12人，报名预计11月20日前后开放。届时会教《第七班》的一小段走位，与11月教《雾港》不重复。</p>
+        <div class="meta"><span>来源：课后答疑记录</span><span>11-03</span></div>
+      </article>
+      <article>
+        <h4>与本地厂牌合作的联合排练</h4>
+        <p>11月中旬有一次联合排练，对方是上海一支四人厂牌，具体曲目未定。目前只是档期沟通，没有签演出合同，属于排期层面的安排，不是已确定的合作演出。</p>
+        <div class="meta"><span>来源：档期沟通</span><span>11-05</span></div>
+      </article>
+      <article>
+        <h4>《第七班》灯光 cue 缩减到9个</h4>
+        <p>11月4日联排后调整，原11个 cue 里有2个切换间隔不到2秒，现场执行容易失误。缩减后每段至少有4秒的灯光过渡时间。</p>
+        <div class="meta"><span>来源：联排记录</span><span>11-04</span></div>
+      </article>
+    </div>
+
+    <div class="compare" style="margin-top:20px">
+      <div class="panel fact">
+        <h4><span class="dot"></span>已确认事实</h4>
+        <ul>
+          <li>《雾港》10月29日定版，时长4分18秒</li>
+          <li>11月6日考核5人参考、2人升线</li>
+          <li>11月15日体验课限12人</li>
+          <li>排练厅 B 地胶11月1日启用</li>
+        </ul>
+      </div>
+      <div class="panel rumor">
+        <h4><span class="dot"></span>回应与待核实</h4>
+        <ul>
+          <li>「六人各跳各的」——定版有4处对位，说法源于首排版印象</li>
+          <li>联合排练——仅档期沟通，未定曲目与合同</li>
+          <li>12月完整教学——排期预计12月中旬，日期未定</li>
+          <li>商演指定《碎光》——目前不接，属推测性需求</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="block" id="related">
+    <div class="block-head">
+      <h2>相关推荐</h2>
+      <span class="note">按搜索热度排列</span>
+    </div>
+    <div class="tag-index">
+      <a href="/#deep">雾港副歌八拍教学</a>
+      <a href="/#featured">碎光滑步独舞段</a>
+      <a href="/#featured">第七班八人走位</a>
+      <a href="/#latest">二线升线考核标准</a>
+      <a href="/#guide">杨浦体验课报名流程</a>
+      <a href="/#deep">爵士编舞如何用停顿</a>
+      <a href="/#reviews">夏柏编舞风格讨论</a>
+      <a href="/#news">商场快闪音响配置</a>
+      <a href="/#overview">舞团一线和二线区别</a>
+    </div>
+  </section>
+
+  <!-- 补充板块：榜单 -->
+  <section class="block" id="ranking">
+    <div class="block-head">
+      <h2>排练出席榜：10月谁最勤</h2>
+      <span class="note">按出勤场次，同场按到场时长</span>
+    </div>
+    <ul class="list">
+      <li><span class="date">01</span><div class="txt"><b>林澈</b> 17场全勤 <span>· 一线，负责第二段对位校准，累计51小时</span></div></li>
+      <li><span class="date">02</span><div class="txt"><b>周晚</b> 17场全勤 <span>· 一线，第1号位镜像基准，累计49小时</span></div></li>
+      <li><span class="date">03</span><div class="txt"><b>夏柏</b> 16场 <span>· 缺席10月12日一场，当日在外地看演出</span></div></li>
+      <li><span class="date">04</span><div class="txt"><b>陈屿</b> 15场 <span>· 二线，11月6日升一线，考核分86</span></div></li>
+      <li><span class="date">05</span><div class="txt"><b>许星野</b> 14场 <span>· 编舞助理，负责记动作与回放整理</span></div></li>
+    </ul>
+    <p class="muted" style="margin-top:10px">说明：出勤统计口径为签到满2小时计1场，10月共17场排练。榜单只反映到场情况，不代表编舞贡献排序。</p>
+  </section>
+
+</main>
+
+<!-- 侧栏 -->
+<aside>
+  <div class="side-card">
+    <h3>本页导航</h3>
+    <ul class="side-nav" id="sideNav">
+      <li><a href="/#overview">舞团概览</a></li>
+      <li><a href="/#featured">精选作品</a></li>
+      <li><a href="/#latest">最新更新</a></li>
+      <li><a href="/#channels">分类频道</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#reviews">观众评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#related">相关推荐</a></li>
+      <li><a href="/#ranking">排练出席榜</a></li>
+    </ul>
+  </div>
+
+  <div class="side-card quote-card">
+    <h3>创作者证言</h3>
+    <p>「我改《雾港》改到第三版才敢定，前两版都在补漏洞，不是加东西。定版之后反而删了两个走位。」</p>
+    <div class="by">—— 夏柏，10月29日排练日志</div>
+  </div>
+
+  <div class="side-card">
+    <h3>近期时间线</h3>
+    <ul class="mini-timeline">
+      <li><time>11-07</time>《雾港》副歌拆解发布</li>
+      <li><time>11-06</time>二线升线考核出榜</li>
+      <li><time>11-04</time>《第七班》第二次联排</li>
+      <li><time>11-01</time>排练厅 B 地胶启用</li>
+      <li><time>10-29</time>《雾港》定版</li>
+    </ul>
+  </div>
+
+  <div class="side-card">
+    <h3>判断舞团实力的三个核对点</h3>
+    <ul style="font-size:14px;color:var(--ink-2);padding-left:1.1em;margin:0">
+      <li>走位有没有对位设计，还是各站各位</li>
+      <li>音乐切点是否标在排练日志里</li>
+      <li>二线考核有没有可复现的评分项</li>
+    </ul>
+  </div>
+</aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="footer-in">
+    <div>
+      <div class="fbrand">ks舞团<span>夏柏</span></div>
+      <p>以编舞叙事为核心的都市舞团，爵士与街头语汇切换，作品按舞台版与排练带两条线发布。</p>
+    </div>
+    <div>
+      <h4>作品</h4>
+      <ul>
+        <li><a href="/#featured">《雾港》六人版</a></li>
+        <li><a href="/#featured">《碎光》独舞段</a></li>
+        <li><a href="/#featured">《第七班》走位版</a></li>
+        <li><a href="/#deep">副歌八拍拆解</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>参与</h4>
+      <ul>
+        <li><a href="/#guide">体验课报名</a></li>
+        <li><a href="/#latest">升线考核</a></li>
+        <li><a href="/#latest">编舞助理招募</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>动态</h4>
+      <ul>
+        <li><a href="/#latest">排练日程</a></li>
+        <li><a href="/#news">商演记录</a></li>
+        <li><a href="/#reviews">观众评论</a></li>
+        <li><a href="/#ranking">出席榜</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-note">
+    <span>示例数据说明：本页成员姓名、排练场次、考核分数与评论账号均为演示用示例内容，日期截至 2026-11-08。页脚更新时间对应正文「最新更新」与「相关资讯」中的可核对条目。</span>
+    <span>© 2026 ks舞团夏柏</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var annH = 38, headH = 62;
+  var nav = document.getElementById('navMenu');
+  var menuBtn = document.getElementById('menuBtn');
+  var toTop = document.getElementById('toTop');
+  var searchInput = document.getElementById('searchInput');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchBox = document.getElementById('searchBox');
+  var searchResult = document.getElementById('searchResult');
+
+  // 移动端菜单
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.setAttribute('aria-label', open ? '收起菜单' : '打开菜单');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.setAttribute('aria-label','打开菜单');
+    }
+  });
+
+  // 平滑滚动偏移
+  document.querySelectorAll('a[href^="/#"], a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href');
+      var id = href.replace(/^\/?#/,'');
+      var target = document.getElementById(id);
+      if(target){
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - annH - headH - 12;
+        window.scrollTo({top: top, behavior: 'smooth'});
+      }
+    });
+  });
+
+  // 回到顶部
+  window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 420){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+    highlightNav();
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏高亮
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section.block'));
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  function highlightNav(){
+    var pos = window.pageYOffset + annH + headH + 80;
+    var cur = null;
+    sections.forEach(function(s){
+      if(s.offsetTop <= pos){ cur = s.id; }
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace(/^\/?#/,'');
+      a.classList.toggle('is-active', id === cur);
+    });
+  }
+  highlightNav();
+
+  // 搜索
+  var index = [];
+  document.querySelectorAll('main section.block').forEach(function(sec){
+    var h2 = sec.querySelector('h2');
+    var title = h2 ? h2.textContent : '';
+    var id = sec.id;
+    sec.querySelectorAll('h3, h4, summary, li, p, a').forEach(function(el){
+      var t = el.textContent.replace(/\s+/g,' ').trim();
+      if(t.length >= 4){
+        index.push({text: t, title: title, id: id});
+      }
+    });
+  });
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchBox.classList.remove('show');
+      return;
+    }
+    var lower = q.toLowerCase();
+    var hits = index.filter(function(item){
+      return item.text.toLowerCase().indexOf(lower) !== -1;
+    }).slice(0,8);
+    if(hits.length === 0){
+      searchBox.innerHTML = '<p style="margin:0">没有找到与「' + escapeHtml(q) + '」相关的内容，试试「雾港」「考核」「体验课」。</p>';
+    }else{
+      var html = '<p style="margin:0 0 6px;font-weight:700">找到 ' + hits.length + ' 条结果</p><ul style="margin:0;padding-left:1.1em">';
+      hits.forEach(function(h){
+        html += '<li><a href="/#' + h.id + '">' + escapeHtml(h.text.slice(0,60)) + '</a> <span class="muted">· ' + escapeHtml(h.title) + '</span></li>';
+      });
+      html += '</ul>';
+      searchBox.innerHTML = html;
+    }
+    searchBox.classList.add('show');
+  }
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!searchResult.contains(e.target) && e.target !== searchInput && e.target !== searchBtn){
+      searchBox.classList.remove('show');
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ks舞团夏柏",
+  "inLanguage": "zh-CN",
+  "description": "ks舞团夏柏的编舞作品、排练日程、舞台花絮与体验课信息整理。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "没有舞蹈基础能报体验课吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。体验课教的是《雾港》副歌第一组8拍，动作只有4个，全程不要求下腰或劈叉。12人的班里通常有5到6人是零基础。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "二线预备考核考什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "考45秒即兴和抽签复现一段8拍。11月6日那场5人参考、2人升线，落选的主要卡在即兴的音乐分句上。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《雾港》的完整教学什么时候出？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目前只有11月7日发布的副歌八拍拆解，时长9分42秒。完整教学预计12月中旬，具体日期未定。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "商演可以指定《碎光》吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《碎光》是独舞段，目前只有夏柏本人跳的版本，商演排期紧时不接。六人版《雾港》是常备曲目。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么《雾港》看着像每个人各跳各的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "定版里有4处对位，第1和第4号位互为镜像。觉得乱多半是看了9月18日的首排版，10月29日定版之后已经修掉。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "排练厅在杨浦哪里，能参观吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在杨浦区一个创意园区的B栋二层，平时不开放参观，体验课和开放日可以进。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "夏柏本人会在体验课出现吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "会。体验课由夏柏带热身和前25分钟，最后15分钟答疑也是他本人答。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+                            </html>
