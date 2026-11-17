@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张津渝警犬基地-训练科目与犬舍档案</title>
+<meta name="description" content="张津渝警犬基地聚焦追踪、搜毒、搜爆与护卫犬训练，整理犬舍档案、训练科目安排、领犬体验与常见问题，附2026年11月更新记录和基地开放日信息。">
+<meta name="keywords" content="张津渝警犬基地">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f3e34'/%3E%3Cpath d='M18 26l6-10 6 8h4l6-8 6 10v16a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z' fill='%23e8c46a'/%3E%3Ccircle cx='26' cy='38' r='2.4' fill='%232f3e34'/%3E%3Ccircle cx='38' cy='38' r='2.4' fill='%232f3e34'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1f2a24;
+  --ink-2:#3d4b42;
+  --muted:#6b7a70;
+  --bg:#f5f3ec;
+  --card:#fffdf7;
+  --line:#d9d4c4;
+  --green:#2f3e34;
+  --green-2:#41573f;
+  --gold:#c99a2e;
+  --gold-soft:#f0e2bd;
+  --red:#9c3b2e;
+  --radius:10px;
+  --shadow:0 2px 10px rgba(31,42,36,.08);
+  --maxw:1180px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.75;font-size:16px;overflow-x:hidden;
+}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .8em}
+a{color:var(--green-2);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{margin:0 0 .8em;padding-left:1.3em}
+li{margin-bottom:.3em}
+img{max-width:100%;display:block}
+:target{scroll-margin-top:112px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* 吸顶公告 + 页头 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--green);color:#f2eddc;font-size:13.5px;
+  display:flex;justify-content:center;gap:10px;align-items:center;
+  padding:7px 16px;text-align:center;
+}
+.announce b{color:var(--gold)}
+.announce a{color:#f2eddc;text-decoration:underline;text-underline-offset:3px}
+.site-head{background:rgba(255,253,247,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.head-inner{display:flex;align-items:center;gap:18px;padding:12px 20px;max-width:var(--maxw);margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:38px;height:38px}
+.brand-text{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--green);white-space:nowrap}
+.nav{display:flex;gap:4px;flex-wrap:wrap;flex:1 1 auto}
+.nav a{padding:6px 10px;border-radius:6px;font-size:14.5px;color:var(--ink-2)}
+.nav a:hover,.nav a:focus-visible{background:var(--gold-soft);text-decoration:none;color:var(--ink)}
+.head-tools{display:flex;gap:8px;align-items:center;flex:0 0 auto}
+.search-box{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.search-box input{border:0;padding:7px 10px;font-size:14px;width:150px;outline:none;font-family:var(--font)}
+.search-box button{border:0;background:var(--green);color:#fff;padding:0 12px;cursor:pointer;font-size:14px}
+.search-box button:hover{background:var(--green-2)}
+.btn{display:inline-block;padding:8px 16px;border-radius:8px;background:var(--green);color:#fff;font-size:14.5px;border:1px solid var(--green);cursor:pointer;font-family:var(--font)}
+.btn:hover{background:var(--green-2);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--green)}
+.btn.ghost:hover{background:var(--gold-soft)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#231d0c}
+.btn.gold:hover{background:#b9881f}
+.menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;font-size:14px;cursor:pointer;font-family:var(--font)}
+.menu-toggle:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.search-result{font-size:13px;color:var(--red);padding:4px 20px 8px;max-width:var(--maxw);margin:0 auto}
+
+/* 首屏 */
+.hero{
+  background:
+    radial-gradient(1000px 380px at 82% -10%, rgba(201,154,46,.22), transparent 62%),
+    linear-gradient(180deg,#eef0e4 0%, #f5f3ec 100%);
+  border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:44px 20px 40px;max-width:var(--maxw);margin:0 auto;position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--green-2);margin-bottom:14px}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block}
+.hero h1{font-size:clamp(28px,4vw,46px);color:var(--green);letter-spacing:1px}
+.hero-sub{margin-top:14px;color:var(--ink-2);font-size:16.5px;max-width:560px}
+.hero-facts{display:flex;gap:26px;margin:22px 0 24px;flex-wrap:wrap}
+.hero-facts div{font-size:13px;color:var(--muted)}
+.hero-facts strong{display:block;font-size:24px;color:var(--green);font-family:Georgia,serif}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto}
+.hero-caption{position:absolute;right:8px;bottom:6px;font-size:12px;color:var(--muted);background:rgba(255,253,247,.85);padding:2px 8px;border-radius:6px}
+
+/* 主体布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:32px;padding:36px 20px 10px;max-width:var(--maxw);margin:0 auto;align-items:start}
+.main-col>*{min-width:0}
+.side-col{position:sticky;top:112px;display:flex;flex-direction:column;gap:18px}
+section.block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 22px;margin-bottom:26px;box-shadow:var(--shadow)}
+.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.block-head h2{font-size:21px;color:var(--green);position:relative;padding-left:14px}
+.block-head h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:4px;border-radius:3px;background:var(--gold)}
+.block-head .more{font-size:13.5px;color:var(--muted)}
+.kicker{font-size:12.5px;color:var(--muted);letter-spacing:1px}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ov-item{border:1px solid var(--line);border-radius:8px;padding:14px;background:#fbf9f1}
+.ov-item h3{font-size:15.5px;color:var(--green);margin-bottom:6px}
+.ov-item p{font-size:13.5px;color:var(--ink-2);margin:0}
+.ov-item span{display:inline-block;margin-top:8px;font-size:12px;color:var(--muted)}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pick-card{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.pick-card img{width:100%;height:150px;object-fit:cover}
+.pick-body{padding:13px 15px 15px}
+.pick-body h3{font-size:15.5px;margin-bottom:5px;color:var(--green)}
+.pick-body p{font-size:13.5px;color:var(--ink-2);margin:0 0 8px}
+.meta{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:12px;background:var(--gold-soft);color:#6b4d0e;border-radius:5px;padding:1px 7px}
+
+/* 最新更新紧凑列表 */
+.updates{list-style:none;padding:0;margin:0}
+.updates li{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.updates li:last-child{border-bottom:0}
+.updates time{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.updates b{color:var(--green)}
+
+/* 分类索引标签 */
+.cat-index{display:flex;flex-wrap:wrap;gap:10px}
+.cat-index a{background:#f1eee2;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink-2)}
+.cat-index a:hover{background:var(--gold-soft);text-decoration:none;color:#4a3608}
+
+/* 深度解析 */
+.analysis h3{font-size:16.5px;color:var(--green);margin:20px 0 8px}
+.analysis p{font-size:15px}
+.pullquote{border-left:4px solid var(--gold);background:#f8f4e5;padding:12px 16px;margin:16px 0;font-size:15px;color:#3a3524;border-radius:0 8px 8px 0}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
+.compare>div{padding:13px 15px;font-size:14px}
+.compare>div:first-child{background:#f4f1e4;border-right:1px solid var(--line)}
+.compare h4{font-size:14px;color:var(--green);margin-bottom:6px}
+.checklist{background:#fbf9f1;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:14px 0;font-size:14.5px}
+.checklist li{margin-bottom:.4em}
+
+/* 体验指南步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st}
+.steps li{position:relative;padding:0 0 16px 46px;counter-increment:st;font-size:14.5px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--gold-soft);display:grid;place-items:center;font-size:14px;font-weight:700}
+.steps b{color:var(--green)}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:14.5px;top:34px;bottom:2px;width:1px;background:var(--line)}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:8px;margin-bottom:10px;background:#fff;overflow:hidden}
+summary{padding:12px 16px;cursor:pointer;font-size:15px;font-weight:600;color:var(--green);list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-weight:700;font-size:17px;line-height:1}
+details[open] summary::after{content:"–"}
+details .faq-body{padding:0 16px 14px;font-size:14.5px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff}
+.comment-head{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:6px}
+.avatar{width:28px;height:28px;border-radius:50%;background:var(--green-2);color:#f0e2bd;display:grid;place-items:center;font-size:13px;font-weight:700;flex:0 0 auto}
+.comment p{margin:0;font-size:14.5px}
+.comment .stars{color:var(--gold);font-size:12.5px;letter-spacing:1px}
+
+/* 资讯 */
+.news-list{display:grid;gap:12px}
+.news-item{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.news-item time{font-size:12.5px;color:var(--muted);border-right:1px solid var(--line);padding-right:10px}
+.news-item h3{font-size:15px;color:var(--green);margin-bottom:3px}
+.news-item p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{font-size:13.5px;border:1px dashed var(--green-2);border-radius:6px;padding:5px 12px;color:var(--green-2)}
+.rec-tags a:hover{background:var(--green);color:#f5f3ec;text-decoration:none;border-style:solid}
+
+/* 榜单 + 时间线 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.rank li:last-child{border-bottom:0}
+.rank li::before{counter-increment:rk;content:counter(rk);width:26px;height:26px;border-radius:6px;display:grid;place-items:center;background:#f1eee2;color:var(--green);font-weight:700;font-size:13px}
+.rank li:nth-child(-n+3)::before{background:var(--gold);color:#231d0c}
+.rank .score{color:var(--muted);font-size:12.5px}
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);padding-left:18px}
+.timeline li{position:relative;padding-bottom:14px;font-size:14px}
+.timeline li::before{content:"";position:absolute;left:-24px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--card);border:2px solid var(--gold)}
+.timeline b{color:var(--green)}
+
+/* 侧栏 */
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.side-card h2{font-size:15.5px;color:var(--green);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.side-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--ink-2);border-left:3px solid transparent}
+.side-nav a:hover{background:#f1eee2;text-decoration:none}
+.side-nav a.active{background:var(--gold-soft);color:#4a3608;border-left-color:var(--gold);font-weight:600}
+.side-note{font-size:13px;color:var(--muted)}
+.side-list{list-style:none;padding:0;margin:0;font-size:14px}
+.side-list li{padding:7px 0;border-bottom:1px dashed var(--line)}
+.side-list li:last-child{border-bottom:0}
+.side-list b{color:var(--green)}
+
+/* 页尾 */
+.site-foot{background:var(--green);color:#dfe4d8;margin-top:40px;padding:38px 0 20px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand span{font-size:18px;font-weight:800;color:#f5f3ec}
+.site-foot p{font-size:13.5px;color:#b9c2b3;line-height:1.7}
+.site-foot h3{font-size:14px;color:var(--gold);margin-bottom:9px}
+.foot-links{list-style:none;padding:0;margin:0;font-size:13.5px}
+.foot-links li{margin-bottom:5px}
+.foot-links a{color:#cfd8c7}
+.foot-links a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:26px;padding-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#9fac99}
+
+/* 回到顶部 */
+.to-top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;background:var(--green);color:var(--gold-soft);border:1px solid var(--green-2);display:none;place-items:center;cursor:pointer;z-index:70;font-size:17px;box-shadow:var(--shadow)}
+.to-top.show{display:grid}
+.to-top:hover{background:var(--green-2)}
+
+/* 平板 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr;padding-top:26px}
+  .side-col{position:static;order:2}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-inner{grid-template-columns:1fr;gap:20px;padding-top:30px}
+  .hero-art{max-width:520px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px 16px;flex-direction:column;box-shadow:var(--shadow)}
+  .head-inner{position:relative;flex-wrap:wrap}
+  .menu-toggle{display:inline-block}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  .head-inner{gap:10px;padding:10px 14px}
+  .brand-text{font-size:16.5px}
+  .search-box input{width:104px}
+  section.block{padding:20px 16px 18px}
+  .pick-grid,.overview-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare>div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .news-item{grid-template-columns:1fr}
+  .news-item time{border-right:0;padding-right:0}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-facts{gap:18px}
+  .updates li{grid-template-columns:1fr;gap:2px}
+  .to-top{right:12px;bottom:12px}
+  .announce{font-size:12px;padding:6px 10px}
+  .layout{padding:20px 14px 6px}
+  .block-head h2{font-size:18.5px}
+  .analysis p{font-size:14.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+  .btn:hover,.to-top:hover{transform:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce">
+    <span><b>张津渝警犬基地</b>公告：11月6日第三犬舍消毒完成，11月8日护卫犬服从复测改为上午9:30</span>
+    <a href="/#updates">查看更新</a>
+  </div>
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2f3e34"/>
+          <path d="M18 26l6-10 6 8h4l6-8 6 10v16a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z" fill="#e8c46a"/>
+          <circle cx="26" cy="38" r="2.4" fill="#2f3e34"/>
+          <circle cx="38" cy="38" r="2.4" fill="#2f3e34"/>
+          <path d="M29 45l3 2.5 3-2.5" stroke="#2f3e34" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">张津渝警犬基地</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">栏目</button>
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">基地概览</a>
+        <a href="/#picks">精选内容</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">科目分类</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">训导员评论</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+      <div class="head-tools">
+        <form class="search-box" id="searchForm" role="search">
+          <input type="search" id="searchInput" placeholder="搜科目/犬名" aria-label="站内搜索">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+    <div class="search-result" id="searchResult" aria-live="polite"></div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag"><i></i>2026年11月 · 第三犬舍开放预约</span>
+      <h1>张津渝警犬基地</h1>
+      <p class="hero-sub">一处在训犬舍与训练场相邻的工作犬训练机构，常设追踪、搜毒、搜爆、护卫四大科目。基地每周四公布犬只训练进度表，周六对预约访客开放观摩通道，训导员与犬只配对情况可当面查询。</p>
+      <div class="hero-facts">
+        <div><strong>4</strong>常设训练科目</div>
+        <div><strong>23</strong>在册工作犬</div>
+        <div><strong>6</strong>名持证训导员</div>
+        <div><strong>11月8日</strong>下次开放日</div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn gold" href="/#guide">预约观摩流程</a>
+        <a class="btn ghost" href="/#picks">看本期精选</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 380" role="img">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e7e9d8"/>
+            <stop offset="1" stop-color="#f5f3ec"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="520" height="380" rx="16" fill="url(#sky)"/>
+        <circle cx="410" cy="78" r="42" fill="#e8c46a" opacity=".55"/>
+        <path d="M0 300 L110 210 L180 260 L300 170 L420 250 L520 200 L520 380 L0 380 Z" fill="#c7cfbb"/>
+        <path d="M0 330 L140 260 L250 300 L360 240 L520 300 L520 380 L0 380 Z" fill="#9fae97"/>
+        <g stroke="#2f3e34" stroke-width="3" fill="none">
+          <path d="M96 300 v-70 h120 v70"/>
+          <path d="M108 230 l48 -34 48 34"/>
+          <path d="M126 300 v-38 h26 v38"/>
+          <path d="M186 300 v-38 h26 v38"/>
+          <path d="M300 300 v-56 h96 v56"/>
+          <path d="M312 244 l36 -26 36 26"/>
+        </g>
+        <g fill="#2f3e34">
+          <rect x="72" y="316" width="380" height="6" rx="3"/>
+        </g>
+        <g transform="translate(330,268)">
+          <path d="M0 24 l14 -18 10 12h16l10 -12 14 18 v18 a6 6 0 0 1 -6 6 H6 a6 6 0 0 1 -6 -6z" fill="#3d4b42"/>
+          <circle cx="16" cy="32" r="2.6" fill="#e8c46a"/>
+          <circle cx="38" cy="32" r="2.6" fill="#e8c46a"/>
+          <path d="M42 40 q12 2 18 12" stroke="#3d4b42" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <g fill="#e8c46a" opacity=".9">
+          <circle cx="128" cy="160" r="4"/>
+          <circle cx="160" cy="146" r="3"/>
+          <circle cx="198" cy="164" r="3.5"/>
+        </g>
+      </svg>
+      <span class="hero-caption">犬舍与训练场平面示意</span>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <main class="main-col">
+
+    <section class="block" id="overview">
+      <div class="block-head">
+        <h2>基地概览：犬舍分区与在训犬种</h2>
+        <span class="more kicker">数据截至11月7日</span>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-item">
+          <h3>第一犬舍 · 追踪</h3>
+          <p>6个独立犬位，地面采用碎石与草地交替铺设，用于足迹气味延长保留。在训犬以马里努阿犬为主。</p>
+          <span>负责训导员：陈立、周凡</span>
+        </div>
+        <div class="ov-item">
+          <h3>第二犬舍 · 搜毒搜爆</h3>
+          <p>8个犬位，配独立嗅源柜。搜毒与搜爆分时段训练，避免气味交叉污染，柜内嗅源每周三更换。</p>
+          <span>负责训导员：罗骁、何蔓</span>
+        </div>
+        <div class="ov-item">
+          <h3>第三犬舍 · 护卫</h3>
+          <p>5个犬位，紧邻服从训练场。11月6日完成全舍消毒，11月8日恢复扑咬服从复测。</p>
+          <span>负责训导员：姚远</span>
+        </div>
+        <div class="ov-item">
+          <h3>训练场 · 综合区</h3>
+          <p>含60米跑道、8组障碍和1处模拟箱体区，箱体数量22个，用于搜爆犬搜索判定训练。</p>
+          <span>周六上午对预约访客开放</span>
+        </div>
+        <div class="ov-item">
+          <h3>幼犬启蒙区</h3>
+          <p>4个月至8个月龄幼犬在此完成环境适应与胆量测试，10月共完成12只幼犬的首轮测评。</p>
+          <span>测评记录可申请调阅</span>
+        </div>
+        <div class="ov-item">
+          <h3>犬粮与医疗角</h3>
+          <p>犬粮按体重分三档配给，每周一记录体重。基地不设兽医门诊，由合作机构每周二、周五巡诊。</p>
+          <span>巡诊记录张贴于值班板</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="picks">
+      <div class="block-head">
+        <h2>精选内容：本期值得细看的三组材料</h2>
+        <a class="more" href="/#news">全部资讯</a>
+      </div>
+      <div class="pick-grid">
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/jq-base-track/560/300" width="560" height="300" loading="lazy" alt="追踪犬在碎石与草地交界处低头寻迹的训练场景">
+          <div class="pick-body">
+            <h3>追踪犬换场训练：草地转碎石的气味衰减</h3>
+            <p>10月28日陈立带犬“黑豆”完成三次换场，碎石段成功率从6/10降至4/10，记录停留时间延长约9秒。</p>
+            <div class="meta"><span class="tag">追踪训练</span><span>10月28日</span></div>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/jq-base-sniff/560/300" width="560" height="300" loading="lazy" alt="搜爆犬在模拟箱体区对箱体逐一嗅认的作业画面">
+          <div class="pick-body">
+            <h3>搜爆犬箱体搜索：22个箱位中的干扰设置</h3>
+            <p>罗骁把嗅源藏在第17、20号箱，另放两组食品干扰。犬“铁锤”两轮均在第3分钟前完成示警。</p>
+            <div class="meta"><span class="tag">搜爆科目</span><span>11月2日</span></div>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/jq-base-guard/560/300" width="560" height="300" loading="lazy" alt="护卫犬在训练场进行扑咬服从中止练习">
+          <div class="pick-body">
+            <h3>护卫犬“停口”复测：口令与手势的同步差</h3>
+            <p>11月5日测试中，仅出口令的中止成功率5/8，口令加手势为7/8。姚远据此调整了训练口令次序。</p>
+            <div class="meta"><span class="tag">护卫科目</span><span>11月5日</span></div>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/jq-base-puppy/560/300" width="560" height="300" loading="lazy" alt="幼犬在启蒙区进行障碍适应与胆量测试">
+          <div class="pick-body">
+            <h3>幼犬胆量测评：12只幼犬的首轮通过分布</h3>
+            <p>10月测评按陌生环境、突然声响、地面材质三项打分，5只一次通过，4只需复测，3只转入观察。</p>
+            <div class="meta"><span class="tag">幼犬启蒙</span><span>10月30日</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="updates">
+      <div class="block-head">
+        <h2>最新更新：本周排期与记录变动</h2>
+        <span class="more kicker">按日期倒序</span>
+      </div>
+      <ul class="updates">
+        <li><time datetime="2026-11-08">今天 11-08</time><span><b>护卫犬服从复测</b>调整至上午9:30，涉及犬只“山虎”“灰子”，测试项含随行、坐延缓与停口。</span></li>
+        <li><time datetime="2026-11-07">昨天 11-07</time><span>第三犬舍<b>消毒记录</b>补录完成，消毒剂为过硫酸氢钾复合盐，作用时间30分钟。</span></li>
+        <li><time datetime="2026-11-06">11-06</time><span>搜毒组更换嗅源柜编号标签，<b>第4号柜</b>挪至靠窗位置，何蔓负责气味浓度复核。</span></li>
+        <li><time datetime="2026-11-04">11-04</time><span>犬粮配给表更新，体重18公斤以上犬只每餐增加<b>30克</b>，由值班员每日登记。</span></li>
+        <li><time datetime="2026-11-02">11-02</time><span>综合训练场<b>22个箱体</b>重新编号，第17号箱内壁更换为深色内衬，用于降低视觉提示。</span></li>
+        <li><time datetime="2026-10-30">10-30</time><span>幼犬启蒙区完成12只幼犬首轮胆量测评，<b>3只</b>转入为期两周的观察流程。</span></li>
+      </ul>
+    </section>
+
+    <section class="block" id="cats">
+      <div class="block-head">
+        <h2>科目分类：按训练方向进入</h2>
+        <span class="more kicker">共9类</span>
+      </div>
+      <div class="cat-index">
+        <a href="/#picks">追踪犬气味迹线训练</a>
+        <a href="/#picks">搜毒犬嗅源识别</a>
+        <a href="/#picks">搜爆犬箱体搜索</a>
+        <a href="/#analysis">护卫犬扑咬服从</a>
+        <a href="/#guide">幼犬胆量测评</a>
+        <a href="/#guide">犬只体重与配粮</a>
+        <a href="/#faq">训导员与犬只配对</a>
+        <a href="/#faq">观摩预约与安全距离</a>
+        <a href="/#rank">在训犬综合评分</a>
+      </div>
+    </section>
+
+    <section class="block analysis" id="analysis">
+      <div class="block-head">
+        <h2>深度解析：换场训练到底值不值得做</h2>
+        <span class="more kicker">观点 · 可反驳</span>
+      </div>
+
+      <p>追踪科目里有一种常见做法：犬在熟悉场地稳定后，立刻换到陌生地面继续练。基地内部对这件事有分歧。周凡主张稳定优先，认为换场太勤会让犬只频繁重建气味判断；陈立坚持每周至少换两次场，理由是实战现场不会重复。</p>
+
+      <h3>一、10月28日那组数据的两种读法</h3>
+      <p>10月28日上午9点，陈立带马里努阿犬“黑豆”做三组换场追踪。第一组在草地，10次布迹中9次完成；第二组转到碎石路，10次中6次完成；第三组返回草地，10次中8次完成。碎石段的平均完成时间从草地的74秒拉长到118秒，犬只在布迹中段的停留次数由2次增加到5次。</p>
+      <div class="compare">
+        <div>
+          <h4>陈立的读法</h4>
+          <p>碎石段成功率下降正好暴露问题。停留次数增多说明犬只还在用视觉和地面压痕辅助，气味主导能力不足，需要继续换场。</p>
+        </div>
+        <div>
+          <h4>周凡的读法</h4>
+          <p>第三组回到草地只恢复到8/10，未回到第一组的9/10，说明当天后段体力与气味疲劳混入，不能全部归因于地面材质。</p>
+        </div>
+      </div>
+      <p>两种读法指向不同结论。若按陈立的建议，碎石段应增加训练频次；若按周凡的意见，先补一次体力与气味恢复的对照测试，再决定是否加量。基地最终采用折中方案：11月第一周碎石段只加一组，同时记录犬只心率与休息间隔。</p>
+
+      <div class="pullquote">把“换场失败”直接等同于“气味能力不足”，在只有一组对照的情况下站不住。至少需要把体力、气味残留和场地陌生度分开记录。</div>
+
+      <h3>二、搜爆科目的判断可以拆成可核对项</h3>
+      <p>11月2日罗骁带犬“铁锤”做箱体搜索，22个箱位中第17、20号放置嗅源，另加两组食品干扰。铁锤两轮都在3分钟内示警，且第一轮在第14号箱前停留7秒后离开。这个细节值得记录：停留不等于示警，判断要区分嗅认、迟疑与最终卧下。</p>
+      <div class="checklist">
+        <p><strong>可核对清单</strong></p>
+        <ul>
+          <li>嗅源位置：第17、20号箱，记录人罗骁，时间11月2日10:20。</li>
+          <li>干扰物：两组食品，分别置于第5、第9号箱外侧。</li>
+          <li>犬只反应：第14号箱停留7秒未示警，第17号箱示警用时2分11秒。</li>
+          <li>复核方式：何蔓在11月3日更换箱体编号后复测一轮，结果一致。</li>
+        </ul>
+      </div>
+      <p>这里可以下一个明确判断：搜爆训练里，箱体编号顺序一旦公开，训导员容易无意识按顺序引导犬只。11月2日之后基地把编号牌改为背面朝外，正是针对这个漏洞。若下一轮复测中犬只仍然优先检查低编号箱位，就该怀疑引导习惯而非犬只嗅认能力。</p>
+
+      <h3>三、护卫犬“停口”测试暴露的口令问题</h3>
+      <p>11月5日下午，姚远对护卫犬“山虎”“灰子”“铁头”做停口测试，共8次。仅出口令时成功5次，口令加手势时成功7次。差异集中在“山虎”身上：它对单一语音口令反应延迟约1.5秒，加手势后延迟缩到0.6秒。</p>
+      <p>一种解释是犬只更依赖视觉线索，另一种解释是训练中手势与口令长期同时出现，撤掉手势相当于条件改变。两种解释都能成立，但前一种更容易被误读成“犬只不听话”。基地决定从11月9日起，护卫组每周安排一次纯口令练习，每次不超过6组，避免犬只把停口和扑咬强度绑定。</p>
+
+      <h3>四、幼犬胆量测评不等于淘汰依据</h3>
+      <p>10月30日的12只幼犬测评里，5只一次通过，4只需复测，3只转入观察。观察并不等于淘汰。基地对转入观察的幼犬安排两周环境适应，记录每日进食量与对人的接近距离。幼犬启蒙区的记录显示，10月31日至11月6日，3只观察犬中有2只接近距离从2米缩短到0.8米以内。</p>
+      <p>可反驳之处在于：接近距离缩短可能只是对固定训导员熟悉，不代表对陌生环境适应。若要判断胆量是否改善，需要引入陌生访客测试。基地计划在11月14日安排一次外来人员参与的复测，届时再更新观察结论。</p>
+    </section>
+
+    <section class="block" id="guide">
+      <div class="block-head">
+        <h2>体验指南：周六观摩怎么走</h2>
+        <span class="more kicker">11月8日场次已满</span>
+      </div>
+      <ol class="steps">
+        <li><b>提前三天登记。</b>观摩名额每场12人，需登记姓名、联系方式与随行人数。11月8日场次已于11月5日登记完毕，11月15日场次从11月12日上午10点开放登记。</li>
+        <li><b>到场后先听安全说明。</b>集合点在门岗内侧，讲解约10分钟，内容包括不得伸手、不得直视护卫犬、不得携带自带犬只入场。</li>
+        <li><b>沿观摩通道行进。</b>通道与训练场保持至少5米距离，全程有地面标线。第一犬舍与第二犬舍可隔栏观察，第三犬舍仅开放外部通道。</li>
+        <li><b>观摩训练展示。</b>周六上午通常安排两组展示，11月8日为护卫犬服从复测与搜爆犬箱体搜索，每组约20分钟。</li>
+        <li><b>提问环节放在展示结束后。</b>训导员会在通道尽头停留15分钟，可询问犬只年龄、训练时长与科目进度。</li>
+        <li><b>离场前归还访客牌。</b>访客牌在门岗领取，离场时交回。基地不设餐饮与纪念品售卖。</li>
+      </ol>
+      <p style="margin-top:12px;font-size:14px;color:var(--ink-2)">如果只想了解训练逻辑、不打算到场，可先看<a href="/#analysis">深度解析</a>里关于换场与箱体搜索的记录，再看<a href="/#faq">常见问题</a>中关于龄期与科目的说明。</p>
+    </section>
+
+    <section class="block" id="faq">
+      <div class="block-head">
+        <h2>常见问题：训练、龄期与观摩</h2>
+        <span class="more kicker">按提问频次排序</span>
+      </div>
+      <details>
+        <summary>追踪犬一般从几个月龄开始正式布迹？</summary>
+        <div class="faq-body">多数在马里努阿犬8至10月龄进入正式布迹，此前先做环境适应与气味游戏。基地第一犬舍当前在训的6只犬中，最小9月龄，最大3岁2个月。月龄不是唯一门槛，能否稳定跟随布迹物气味才是判断点。</div>
+      </details>
+      <details>
+        <summary>搜毒犬和搜爆犬能由同一只犬兼任吗？</summary>
+        <div class="faq-body">技术上可行，但训练管理麻烦。搜毒嗅源与搜爆嗅源需要严格分柜存放，同一只犬频繁切换目标气味容易出现嗅认迟疑。基地第二犬舍目前把两类犬只分开排班，上午搜毒、下午搜爆，中间至少间隔90分钟。</div>
+      </details>
+      <details>
+        <summary>护卫犬“停口”测试为什么口令加手势成功率高？</summary>
+        <div class="faq-body">11月5日的8次测试中，仅口令成功5次，口令加手势成功7次。差异主要在“山虎”。常见原因是训练时手势与口令同时出现，犬只形成了对视觉线索的额外依赖。基地从11月9日起增加纯口令练习，每次控制在6组以内。</div>
+      </details>
+      <details>
+        <summary>观摩时能靠近犬舍拍照吗？</summary>
+        <div class="faq-body">可以在隔栏外侧拍照，但不能把手或设备伸入栏杆。第三犬舍只开放外部通道，不进入舍内。闪光灯需要关闭，11月8日场次的安全说明里会重复这一条。</div>
+      </details>
+      <details>
+        <summary>幼犬胆量测评没通过会被淘汰吗？</summary>
+        <div class="faq-body">不会。10月30日12只幼犬中有3只转入观察，观察期为两周，期间记录进食量、接近距离与对声响的反应。是否继续训练要看11月14日复测结果，观察本身不是淘汰结论。</div>
+      </details>
+      <details>
+        <summary>犬只体重多久记录一次，犬粮怎么配？</summary>
+        <div class="faq-body">每周一记录体重，按18公斤上下分档配给。11月4日更新的配给表规定，18公斤以上犬只每餐增加30克。值班员每日登记进食情况，异常记录会在次日交接时说明。</div>
+      </details>
+    </section>
+
+    <section class="block" id="comments">
+      <div class="block-head">
+        <h2>训导员与访客评论</h2>
+        <span class="more kicker">共6条 · 已展示</span>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">陈</span><span>陈立 · 追踪组训导员</span><span class="stars">★★★★★</span></div>
+          <p>“黑豆”10月28日那组碎石数据我认，但第三组只回到8/10，确实有疲劳因素。下周我打算把碎石训练放在上午第一组，避开前一晚的长时间休息影响。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">周</span><span>周凡 · 追踪组训导员</span><span class="stars">★★★☆☆</span></div>
+          <p>换场频率我保留意见。三天换两次场，犬只刚建立的地面判断又被推翻。建议先把同一场地的重复次数提到15次以上，再谈换场。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">罗</span><span>罗骁 · 搜爆组训导员</span><span class="stars">★★★★★</span></div>
+          <p>11月2日“铁锤”在第14号箱停留7秒是正常嗅认，不是误判。箱体编号背面朝外之后，下一轮可以看看它是否还优先跑低编号。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">何</span><span>何蔓 · 搜毒组训导员</span><span class="stars">★★★★☆</span></div>
+          <p>第4号嗅源柜挪到窗边后，柜内温度比原来高约2摄氏度，气味浓度复核在11月6日做了一次，下午时段差值更明显，建议加个遮光帘。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">访</span><span>访客 林先生 · 11月1日观摩</span><span class="stars">★★★☆☆</span></div>
+          <p>观摩通道离第三犬舍有点远，基本看不清犬只动作。安全说明讲得很细，但展示只有两组，20分钟结束得有点快。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">姚</span><span>姚远 · 护卫组训导员</span><span class="stars">★★★★☆</span></div>
+          <p>“山虎”纯口令延迟1.5秒这个数我认同。手势一撤反应就慢，说明平时练得太顺。11月9日起每周一次纯口令，先练6组，多了容易烦躁。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="news">
+      <div class="block-head">
+        <h2>相关资讯：场地与合作动态</h2>
+        <a class="more" href="/#updates">看更新记录</a>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <time datetime="2026-11-06">11-06</time>
+          <div>
+            <h3>第三犬舍完成消毒并恢复犬位</h3>
+            <p>使用过硫酸氢钾复合盐，作用30分钟后通风2小时。5个犬位于11月6日下午恢复使用，护卫组训练从11月7日恢复。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-04">11-04</time>
+          <div>
+            <h3>犬粮配给表按体重三档调整</h3>
+            <p>18公斤以上每餐增加30克，12至18公斤维持原量，12公斤以下减少20克。调整依据是10月四周的体重记录。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-11-02">11-02</time>
+          <div>
+            <h3>综合训练场22个箱体重新编号</h3>
+            <p>编号牌改为背面朝外，第17号箱内壁换深色内衬。罗骁负责下一轮搜索测试的编号盲测安排。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-31">10-31</time>
+          <div>
+            <h3>合作机构巡诊时间定为周二、周五</h3>
+            <p>基地不设常驻兽医，巡诊记录张贴在值班板。10月31日巡诊记录显示两只犬有轻微足垫磨损，已调整训练地面停留时间。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="rank">
+      <div class="block-head">
+        <h2>在训犬综合评分榜</h2>
+        <span class="more kicker">按10月科目完成度</span>
+      </div>
+      <ol class="rank">
+        <li><span>“铁锤” · 搜爆犬 · 3岁</span><span class="score">9.2 / 10</span></li>
+        <li><span>“黑豆” · 追踪犬 · 2岁4个月</span><span class="score">8.6 / 10</span></li>
+        <li><span>“灰子” · 护卫犬 · 4岁</span><span class="score">8.3 / 10</span></li>
+        <li><span>“山虎” · 护卫犬 · 3岁7个月</span><span class="score">7.9 / 10</span></li>
+        <li><span>“青稞” · 搜毒犬 · 2岁1个月</span><span class="score">7.6 / 10</span></li>
+      </ol>
+      <p style="margin-top:12px;font-size:13.5px;color:var(--muted)">评分由科目完成度、示警稳定性与服从三项合成，权重分别为50%、30%、20%。单项记录可向训导员当面查询。</p>
+    </section>
+
+    <section class="block" id="timeline">
+      <div class="block-head">
+        <h2>十一月训练时间线</h2>
+      </div>
+      <ul class="timeline">
+        <li><b>11月2日</b> · 搜爆组箱体搜索测试，22个箱位，铁锤两轮3分钟内示警。</li>
+        <li><b>11月4日</b> · 犬粮配给表更新，18公斤以上犬只每餐加30克。</li>
+        <li><b>11月5日</b> · 护卫犬停口测试，仅口令5/8，口令加手势7/8。</li>
+        <li><b>11月6日</b> · 第三犬舍消毒完成，嗅源柜第4号挪位复核。</li>
+        <li><b>11月8日</b> · 护卫犬服从复测，上午9:30，观摩场次已满。</li>
+        <li><b>11月9日</b> · 护卫组开始每周一次纯口令练习，每次不超过6组。</li>
+        <li><b>11月12日</b> · 11月15日观摩场次开放登记。</li>
+        <li><b>11月14日</b> · 3只观察期幼犬引入陌生访客复测。</li>
+      </ul>
+    </section>
+
+    <section class="block" id="rec">
+      <div class="block-head">
+        <h2>相关推荐</h2>
+      </div>
+      <div class="rec-tags">
+        <a href="/#analysis">追踪犬碎石地气味训练</a>
+        <a href="/#picks">搜爆犬箱体盲测设置</a>
+        <a href="/#analysis">护卫犬停口口令与手势</a>
+        <a href="/#guide">周六观摩安全距离</a>
+        <a href="/#faq">幼犬胆量观察期记录</a>
+        <a href="/#rank">在马里努阿犬科目完成度</a>
+        <a href="/#updates">犬舍消毒与犬位恢复</a>
+        <a href="/#faq">搜毒与搜爆分班排期</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="side-col" aria-label="侧栏导航与提示">
+    <div class="side-card">
+      <h2>栏目导航</h2>
+      <ul class="side-nav" id="sideNav">
+        <li><a href="/#overview">基地概览</a></li>
+        <li><a href="/#picks">精选内容</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#cats">科目分类</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">训导员评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h2>近期节点</h2>
+      <ul class="side-list">
+        <li><b>11月8日</b> 护卫犬服从复测 9:30</li>
+        <li><b>11月12日</b> 下一场观摩开放登记</li>
+        <li><b>11月14日</b> 观察期幼犬复测</li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h2>观摩提醒</h2>
+      <p class="side-note">每场12人，提前三天登记。通道与训练场保持5米以上，不伸手、不直视护卫犬、不携带自带犬只。11月8日场次已满。</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-foot" id="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#41573f"/>
+            <path d="M18 26l6-10 6 8h4l6-8 6 10v16a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z" fill="#e8c46a"/>
+            <circle cx="26" cy="38" r="2.4" fill="#2f3e34"/>
+            <circle cx="38" cy="38" r="2.4" fill="#2f3e34"/>
+          </svg>
+          <span>张津渝警犬基地</span>
+        </div>
+        <p>在训工作犬与训练场相邻管理，按追踪、搜毒、搜爆、护卫四科目排班，每周四更新进度，周六开放预约观摩。</p>
+      </div>
+      <div>
+        <h3>科目入口</h3>
+        <ul class="foot-links">
+          <li><a href="/#picks">追踪犬气味训练</a></li>
+          <li><a href="/#picks">搜毒犬嗅源识别</a></li>
+          <li><a href="/#picks">搜爆犬箱体搜索</a></li>
+          <li><a href="/#analysis">护卫犬扑咬服从</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参观与记录</h3>
+        <ul class="foot-links">
+          <li><a href="/#guide">观摩预约流程</a></li>
+          <li><a href="/#updates">本周更新记录</a></li>
+          <li><a href="/#rank">在训犬评分榜</a></li>
+          <li><a href="/#timeline">十一月训练时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>互动问答</h3>
+        <ul class="foot-links">
+          <li><a href="/#faq">追踪犬布迹月龄</a></li>
+          <li><a href="/#faq">搜毒与搜爆分班</a></li>
+          <li><a href="/#faq">护卫犬停口测试</a></li>
+          <li><a href="/#comments">训导员与访客评论</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页面内容含示例训练数据，犬只评分与营业安排以基地值班板为准。更新时间：2026年11月8日，对应护卫犬复测、第三犬舍消毒与嗅源柜复核三项。</span>
+      <span>© 2026 张津渝警犬基地 · 内部资料，未经授权不得转载</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuToggle = document.getElementById('menuToggle');
+  var mainNav = document.getElementById('mainNav');
+  menuToggle.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mainNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.matchMedia('(max-width:1000px)').matches){
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
+  var input = document.getElementById('searchInput');
+  var form = document.getElementById('searchForm');
+  var result = document.getElementById('searchResult');
+  function doSearch(e){
+    if(e) e.preventDefault();
+    var q = input.value.trim();
+    if(!q){ result.textContent = ''; return; }
+    var main = document.querySelector('.main-col');
+    var text = main.innerText;
+    var count = 0;
+    var lower = q.toLowerCase();
+    var idx = text.toLowerCase().indexOf(lower);
+    while(idx !== -1){ count++; idx = text.toLowerCase().indexOf(lower, idx + q.length); }
+    if(count > 0){
+      result.textContent = '在正文中找到“' + q + '”共 ' + count + ' 处，相关板块已高亮标题';
+      var blocks = main.querySelectorAll('section.block');
+      var first = null;
+      blocks.forEach(function(b){
+        if(b.innerText.toLowerCase().indexOf(lower) !== -1 && !first) first = b;
+      });
+      if(first) first.scrollIntoView({behavior:'smooth', block:'start'});
+    } else {
+      result.textContent = '未找到“' + q + '”。可试试：追踪、搜爆、停口、观摩、犬粮';
+    }
+  }
+  form.addEventListener('submit', doSearch);
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var ids = links.map(function(a){ return a.getAttribute('href').replace('/#',''); });
+  var sections = ids.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  var ticking = false;
+  function onScroll(){
+    var pos = window.scrollY + 140;
+    var current = ids[0];
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    links.forEach(function(a){
+      var is = a.getAttribute('href') === '/#' + current;
+      a.classList.toggle('active', is);
+      if(is){ a.setAttribute('aria-current','true'); } else { a.removeAttribute('aria-current'); }
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"张津渝警犬基地",
+  "inLanguage":"zh-CN",
+  "description":"张津渝警犬基地聚焦追踪、搜毒、搜爆与护卫犬训练，整理犬舍档案、训练科目安排、领犬体验与常见问题。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"追踪犬一般从几个月龄开始正式布迹？","acceptedAnswer":{"@type":"Answer","text":"多数在马里努阿犬8至10月龄进入正式布迹，此前先做环境适应与气味游戏。基地第一犬舍当前在训的6只犬中，最小9月龄，最大3岁2个月。"}},
+    {"@type":"Question","name":"搜毒犬和搜爆犬能由同一只犬兼任吗？","acceptedAnswer":{"@type":"Answer","text":"技术上可行，但训练管理麻烦。搜毒嗅源与搜爆嗅源需要严格分柜存放，同一只犬频繁切换目标气味容易出现嗅认迟疑。基地目前上午搜毒、下午搜爆，中间至少间隔90分钟。"}},
+    {"@type":"Question","name":"护卫犬“停口”测试为什么口令加手势成功率高？","acceptedAnswer":{"@type":"Answer","text":"11月5日的8次测试中，仅口令成功5次，口令加手势成功7次。差异主要在“山虎”。常见原因是训练时手势与口令同时出现，犬只形成了对视觉线索的额外依赖。"}},
+    {"@type":"Question","name":"观摩时能靠近犬舍拍照吗？","acceptedAnswer":{"@type":"Answer","text":"可以在隔栏外侧拍照，但不能把手或设备伸入栏杆。第三犬舍只开放外部通道，不进入舍内，闪光灯需要关闭。"}},
+    {"@type":"Question","name":"幼犬胆量测评没通过会被淘汰吗？","acceptedAnswer":{"@type":"Answer","text":"不会。10月30日12只幼犬中有3只转入观察，观察期为两周，记录进食量、接近距离与对声响的反应。是否继续训练要看11月14日复测结果。"}},
+    {"@type":"Question","name":"犬只体重多久记录一次，犬粮怎么配？","acceptedAnswer":{"@type":"Answer","text":"每周一记录体重，按18公斤上下分档配给。11月4日更新的配给表规定，18公斤以上犬只每餐增加30克，值班员每日登记进食情况。"}}
+  ]
+}
+</script>
+</body>
+        </html>
