@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>五一在线吃瓜轻量版-假期舆论事件速览</title>
+<meta name="description" content="五一在线吃瓜轻量版，给假期里的围观者一份可核对的舆论事件速览。按平台更新的现场说法、当事人回应与时间线，拆开五一出游、景区与演出争议里的具体条目，标清事实、转述和推测，省流量也能看清来龙去脉。">
+<meta name="keywords" content="五一在线吃瓜轻量版">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2410c'/%3E%3Cpath d='M9 10c5 2 9 2 14 0v7c-5 2-9 2-14 0z' fill='%23fff7ed'/%3E%3Cpath d='M9 10v14c5 2 9 2 14 0' fill='none' stroke='%23fdba74' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c1917;
+  --ink-2:#44403c;
+  --ink-3:#78716c;
+  --line:#e7e5e4;
+  --line-2:#d6d3d1;
+  --bg:#fdfcf9;
+  --bg-2:#f8f5ef;
+  --card:#ffffff;
+  --brand:#c2410c;
+  --brand-2:#9a3412;
+  --brand-soft:#fff1e6;
+  --accent:#0f766e;
+  --accent-soft:#e6fffb;
+  --warn:#a16207;
+  --warn-soft:#fef9c3;
+  --radius-s:6px;
+  --radius:10px;
+  --radius-l:16px;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:72px;
+  --shadow-s:0 1px 2px rgba(28,25,23,.06);
+  --shadow-m:0 4px 14px rgba(28,25,23,.08);
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{line-height:1.3;margin:0;font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.3em}
+li{margin-bottom:var(--sp-1)}
+.container{width:min(1180px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:999;border-radius:0 0 var(--radius) 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid #1d4ed8;outline-offset:2px;border-radius:4px}
+
+/* 公告条 + 页头 */
+.topstack{position:sticky;top:0;z-index:80}
+.notice{background:var(--ink);color:#fafaf9;font-size:13.5px}
+.notice .container{display:flex;gap:12px;align-items:center;padding:7px 0;flex-wrap:wrap}
+.notice b{color:#fdba74;font-weight:600}
+.notice a{color:#e7e5e4}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#fdba74;flex:none;box-shadow:0 0 0 3px rgba(253,186,116,.2)}
+.notice .date{font-family:var(--mono);font-size:12.5px;color:#d6d3d1}
+.site-header{background:rgba(253,252,249,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd-inner{display:flex;align-items:center;gap:var(--sp-5);padding:12px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .bt{font-weight:800;font-size:17.5px;letter-spacing:.01em;color:var(--ink);line-height:1.2}
+.brand .bt small{display:block;font-size:11.5px;color:var(--ink-3);font-weight:500;letter-spacing:.08em}
+.nav{display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+.nav a{padding:6px 10px;border-radius:var(--radius-s);color:var(--ink-2);font-size:14.5px;font-weight:500}
+.nav a:hover{background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+.nav a.on{background:var(--brand);color:#fff}
+.hd-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{display:flex;align-items:center;border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:4px 4px 4px 14px;box-shadow:var(--shadow-s)}
+.search input{border:0;outline:0;font:inherit;font-size:14px;width:150px;background:transparent;color:var(--ink)}
+.search button{border:0;background:var(--brand);color:#fff;font:inherit;font-size:13.5px;font-weight:600;padding:6px 14px;border-radius:999px;cursor:pointer}
+.search button:hover{background:var(--brand-2)}
+.search-out{font-size:13px;color:var(--brand-2);min-height:0}
+.search-out:not(:empty){padding-top:6px}
+.menu-btn{display:none;border:1px solid var(--line-2);background:#fff;border-radius:var(--radius-s);padding:8px 12px;font:inherit;font-size:14px;cursor:pointer;align-items:center;gap:6px}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 340px at 85% -10%,#ffe8d6 0%,transparent 70%),
+  linear-gradient(180deg,#fdfcf9 0%,#fbf7f1 100%);
+  border-bottom:1px solid var(--line)}
+.hero .container{display:grid;grid-template-columns:1.08fr .92fr;gap:var(--sp-7);align-items:center;padding:var(--sp-7) 0 var(--sp-6)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--brand-2);background:var(--brand-soft);border:1px solid #fed7aa;border-radius:999px;padding:4px 12px;margin-bottom:var(--sp-4);letter-spacing:.03em}
+.hero h1{font-size:clamp(28px,4vw,44px);letter-spacing:-.02em;margin-bottom:var(--sp-3)}
+.hero .lede{font-size:16.5px;color:var(--ink-2);max-width:34em;margin-bottom:var(--sp-4)}
+.hero .lede strong{color:var(--ink);font-weight:600}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:var(--sp-5)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:14.5px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:var(--brand);color:#fff}
+.btn-p:hover{background:var(--brand-2)}
+.btn-g{background:#fff;color:var(--ink);border-color:var(--line-2)}
+.btn-g:hover{border-color:var(--brand);color:var(--brand-2)}
+.stat-row{display:flex;gap:var(--sp-5);flex-wrap:wrap;border-top:1px dashed var(--line-2);padding-top:var(--sp-4)}
+.stat{min-width:96px}
+.stat b{display:block;font-size:22px;font-family:var(--mono);letter-spacing:-.02em;color:var(--brand-2)}
+.stat span{font-size:12.5px;color:var(--ink-3)}
+.hero-art{position:relative;min-height:300px}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 10px 24px rgba(154,52,18,.12))}
+.art-badge{position:absolute;font-size:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;box-shadow:var(--shadow-s);color:var(--ink-2)}
+.art-badge.b1{top:6%;left:2%}
+.art-badge.b2{bottom:14%;right:0}
+.art-badge.b3{top:44%;right:8%;background:var(--warn-soft);border-color:#fde68a;color:var(--warn)}
+
+/* 主布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-6);padding:var(--sp-6) 0 var(--sp-8)}
+.side{display:flex;flex-direction:column;gap:var(--sp-4)}
+.side-sticky{position:sticky;top:120px;display:flex;flex-direction:column;gap:var(--sp-4)}
+
+section.sec{scroll-margin-top:124px;margin-bottom:var(--sp-7)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-4);border-bottom:2px solid var(--ink);padding-bottom:var(--sp-2);margin-bottom:var(--sp-4);flex-wrap:wrap}
+.sec-head h2{font-size:22px}
+.sec-head .more{font-size:13px;color:var(--brand-2);white-space:nowrap}
+.sec-head .kicker{font-family:var(--mono);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.sec-intro{color:var(--ink-2);font-size:15px;margin-bottom:var(--sp-4);max-width:52em}
+
+/* 卡片 */
+.grid{display:grid;gap:var(--sp-4)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--shadow-s);transition:transform .15s ease,border-color .15s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.card h3{font-size:16.5px;margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--ink-2);margin-bottom:var(--sp-2)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--bg-2);color:var(--ink-2);border:1px solid var(--line);margin-right:6px}
+.tag.t-fact{background:var(--accent-soft);border-color:#99f6e4;color:#115e59}
+.tag.t-resp{background:#eef2ff;border-color:#c7d2fe;color:#3730a3}
+.tag.t-warn{background:var(--warn-soft);border-color:#fde68a;color:var(--warn)}
+.tag.t-rumor{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.meta{font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono)}
+
+/* 分类索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cat{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow-s);transition:border-color .15s,transform .15s}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px);text-decoration:none}
+.cat b{display:block;font-size:15px;color:var(--ink)}
+.cat span{font-size:12.5px;color:var(--ink-3)}
+
+/* 深度解析 */
+.feature{background:#fff;border:1px solid var(--line-2);border-radius:var(--radius-l);padding:var(--sp-5);box-shadow:var(--shadow-m)}
+.feature .f-tag{font-family:var(--mono);font-size:12px;color:var(--brand-2);letter-spacing:.08em}
+.feature h2{font-size:24px;margin:6px 0 var(--sp-3)}
+.feature h3{font-size:17px;margin:var(--sp-5) 0 var(--sp-2);padding-left:10px;border-left:4px solid var(--brand)}
+.feature p{font-size:15.5px;color:var(--ink-2)}
+.claim{background:var(--brand-soft);border:1px solid #fed7aa;border-radius:var(--radius);padding:14px 16px;margin:var(--sp-4) 0}
+.claim b{color:var(--brand-2)}
+.check-table{width:100%;border-collapse:collapse;font-size:14px;margin:var(--sp-3) 0}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--bg-2);font-weight:600;font-size:13px}
+.pullquote{border-left:3px solid var(--accent);background:var(--accent-soft);padding:var(--sp-3) var(--sp-4);border-radius:0 var(--radius) var(--radius) 0;font-size:15px;color:#134e4a;margin:var(--sp-4) 0}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line-2);margin-left:8px}
+.timeline li{position:relative;padding:0 0 var(--sp-4) var(--sp-5)}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--brand)}
+.timeline time{font-family:var(--mono);font-size:12px;color:var(--brand-2);display:block}
+.timeline p{font-size:14.5px;margin:2px 0 0;color:var(--ink-2)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden;background:#fff}
+.compare > div{padding:var(--sp-4)}
+.compare .cL{background:#fef2f2;border-right:1px solid var(--line)}
+.compare .cR{background:var(--accent-soft)}
+.compare h3{font-size:14.5px;margin-bottom:var(--sp-2)}
+.compare ul{padding-left:1.1em;margin-bottom:0}
+.compare li{font-size:14px;color:var(--ink-2)}
+
+/* 列表 */
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{display:grid;grid-template-columns:78px 1fr;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px dashed var(--line-2)}
+.news-list li:last-child{border-bottom:0}
+.news-list time{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding-top:3px}
+.news-list b{font-size:15px;display:block;color:var(--ink);font-weight:600}
+.news-list span{font-size:13.5px;color:var(--ink-2)}
+
+/* 步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-3)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:var(--sp-3);background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.steps li::before{content:counter(s);font-family:var(--mono);font-weight:700;font-size:15px;color:#fff;background:var(--brand);width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
+.steps b{display:block;font-size:15px;margin-bottom:2px}
+.steps p{font-size:14px;color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px;box-shadow:var(--shadow-s)}
+.faq summary{cursor:pointer;padding:13px 16px;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--brand);font-weight:700;font-size:18px;flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq .fa-body{padding:12px 16px;font-size:14.5px;color:var(--ink-2);background:var(--bg)}
+
+/* 评论 */
+.cmts{display:grid;gap:var(--sp-3)}
+.cmt{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.cmt .who{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-family:var(--mono);font-size:13px;color:#fff;flex:none}
+.cmt .who b{font-size:14px}
+.cmt .who time{font-size:12px;color:var(--ink-3);font-family:var(--mono)}
+.cmt p{font-size:14.5px;color:var(--ink-2);margin:0}
+.cmt .ref{display:inline-block;font-size:12px;color:var(--accent);border:1px dashed #99f6e4;background:var(--accent-soft);border-radius:999px;padding:1px 8px;margin-bottom:6px}
+
+/* 标签索引 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:8px}
+.tagcloud a{font-size:13.5px;padding:5px 12px;border-radius:999px;background:#fff;border:1px solid var(--line-2);color:var(--ink-2);transition:all .15s}
+.tagcloud a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{counter-increment:r;display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line-2)}
+.rank li:last-child{border-bottom:0}
+.rank li::before{content:counter(r);font-family:var(--mono);font-weight:700;font-size:13px;color:#fff;background:var(--ink-3);width:22px;height:22px;border-radius:6px;display:grid;place-items:center}
+.rank li:nth-child(1)::before{background:#b45309}
+.rank li:nth-child(2)::before{background:#78716c}
+.rank li:nth-child(3)::before{background:#a8a29e}
+.rank b{font-size:14.5px}
+.rank em{font-style:normal;font-size:12px;font-family:var(--mono);color:var(--brand-2)}
+
+/* 侧栏 */
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.panel h3{font-size:14px;letter-spacing:.04em;color:var(--ink-3);font-weight:600;margin-bottom:10px}
+.toc{list-style:none;padding:0;margin:0;font-size:14px;border-left:2px solid var(--line)}
+.toc a{display:block;padding:5px 10px;color:var(--ink-2);border-left:2px solid transparent;margin-left:-2px;border-radius:0 4px 4px 0}
+.toc a:hover{background:var(--bg-2);text-decoration:none;color:var(--brand-2)}
+.toc a.active{color:var(--brand-2);font-weight:600;border-left-color:var(--brand);background:var(--brand-soft)}
+.side-note{font-size:13px;color:var(--ink-3)}
+.side-note b{color:var(--ink)}
+
+/* 页尾 */
+footer{background:var(--ink);color:#d6d3d1;padding:var(--sp-7) 0 var(--sp-5);margin-top:var(--sp-6)}
+.ft-grid{display:grid;grid-template-columns:1.4fr 2fr;gap:var(--sp-6)}
+.ft-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.ft-brand b{color:#fff;font-size:17px}
+.ft-desc{font-size:14px;color:#a8a29e;max-width:26em}
+.ft-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4)}
+.ft-cols h4{color:#fff;font-size:13.5px;margin-bottom:8px;letter-spacing:.04em}
+.ft-cols ul{list-style:none;padding:0;margin:0}
+.ft-cols li{margin-bottom:6px}
+.ft-cols a{color:#a8a29e;font-size:13.5px}
+.ft-cols a:hover{color:#fdba74}
+.ft-bottom{border-top:1px solid #292524;margin-top:var(--sp-6);padding-top:var(--sp-4);font-size:12.5px;color:#78716c;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ft-bottom .upd{font-family:var(--mono)}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);background:#fff;color:var(--brand-2);font-size:18px;cursor:pointer;box-shadow:var(--shadow-m);display:none;place-items:center;z-index:70}
+#toTop.show{display:grid}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{order:2}
+  .side-sticky{position:static}
+  .hero .container{grid-template-columns:1fr;gap:var(--sp-5)}
+  .hero-art{max-width:460px}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:720px){
+  .container{width:calc(100% - 28px)}
+  .menu-btn{display:inline-flex}
+  .nav{display:none;order:5;flex-basis:100%;border-top:1px solid var(--line);padding-top:8px}
+  .nav.open{display:flex}
+  .nav a{padding:8px 12px;font-size:15px}
+  .hd-tools{width:100%;margin-left:0}
+  .search{flex:1}
+  .search input{width:100%}
+  .g3,.g2{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .compare{grid-template-columns:1fr}
+  .compare .cL{border-right:0;border-bottom:1px solid var(--line)}
+  .ft-grid{grid-template-columns:1fr}
+  .ft-cols{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:28px}
+  .stat-row{gap:var(--sp-4)}
+  section.sec{scroll-margin-top:150px}
+  .news-list li{grid-template-columns:1fr;gap:2px}
+  .art-badge{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.cat:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="topstack">
+  <div class="notice" id="notice">
+    <div class="container">
+      <span class="dot" aria-hidden="true"></span>
+      <b>公告</b>
+      <span>11月8日 02:40 更新：西湖断桥「保安喊话」原始视频已在当事游客账号放出，时长 1 分 42 秒。</span>
+      <span class="date">2026-11-08</span>
+      <a href="/#timeline">看时间线</a>
+    </div>
+  </div>
+  <header class="site-header" id="top">
+    <div class="container hd-inner">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <svg viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#c2410c"/>
+          <path d="M11 12.5c5.6 2.3 12.4 2.3 18 0v6.6c-5.6 2.3-12.4 2.3-18 0z" fill="#fff7ed"/>
+          <path d="M11 12.5v15c5.6 2.3 12.4 2.3 18 0v-15" fill="none" stroke="#fdba74" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M15 9.5l1.4 3M20 8.8v3M25 9.5l-1.4 3" stroke="#fdba74" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="bt">五一在线吃瓜轻量版<small>轻量 · 可核对 · 假期速览</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="主导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#pick">精选</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#cmts">用户评论</a>
+      </nav>
+      <div class="hd-tools">
+        <div class="search" role="search">
+          <label for="q" class="skip">站内查找</label>
+          <input id="q" type="search" placeholder="搜景区、演出、饭店名" autocomplete="off">
+          <button type="button" id="qBtn">查找</button>
+        </div>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav">菜单</button>
+      </div>
+    </div>
+    <div class="container"><div class="search-out" id="searchOut" role="status" aria-live="polite"></div></div>
+  </header>
+</div>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="container">
+      <div>
+        <span class="eyebrow">假期围观 · 10 天回看窗口</span>
+        <h1 id="h1">五一在线吃瓜轻量版</h1>
+        <p class="lede">给假期里的围观者一份看得完的速览：<strong>11 月 1 日至 11 月 8 日</strong>，黄山西海大峡谷限流争执、杭州「宋城夜游」退票差额、成都玉林“霸王餐”误会、洛阳龙门石窟无人机盘旋，四条线索的现场说法、官方回应与自述时间轴被分开摆放。省流量版本不设自动播放，不贴无源截图。</p>
+        <div class="hero-cta">
+          <a class="btn btn-p" href="/#deep">读深度解析</a>
+          <a class="btn btn-g" href="/#timeline">对一遍时间线</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>11</b><span>独立板块</span></div>
+          <div class="stat"><b>31</b><span>条可核对条目</span></div>
+          <div class="stat"><b>7</b><span>条涉事方回应</span></div>
+          <div class="stat"><b>3</b><span>类信息标注</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <span class="art-badge b1">现场视频 · 1分42秒</span>
+        <span class="art-badge b3">待核实</span>
+        <span class="art-badge b2">回应已出</span>
+        <svg viewBox="0 0 420 330" role="img" aria-labelledby="artTitle">
+          <title id="artTitle">三条不同颜色的线索从现场、回应、转述汇入同一张速览卡片</title>
+          <defs>
+            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fff7ed"/>
+              <stop offset="1" stop-color="#ffe4cc"/>
+            </linearGradient>
+          </defs>
+          <rect x="40" y="26" width="300" height="266" rx="18" fill="url(#gg)" stroke="#fdba74" stroke-width="1.5"/>
+          <rect x="66" y="52" width="248" height="52" rx="9" fill="#fff" stroke="#fed7aa"/>
+          <circle cx="86" cy="78" r="10" fill="#c2410c"/>
+          <rect x="104" y="68" width="128" height="8" rx="4" fill="#9a3412" opacity=".8"/>
+          <rect x="104" y="82" width="84" height="7" rx="3.5" fill="#d6d3d1"/>
+          <rect x="66" y="118" width="248" height="52" rx="9" fill="#fff" stroke="#99f6e4"/>
+          <circle cx="86" cy="144" r="10" fill="#0f766e"/>
+          <rect x="104" y="134" width="150" height="8" rx="4" fill="#115e59" opacity=".8"/>
+          <rect x="104" y="148" width="66" height="7" rx="3.5" fill="#d6d3d1"/>
+          <rect x="66" y="184" width="248" height="52" rx="9" fill="#fff" stroke="#fde68a"/>
+          <circle cx="86" cy="210" r="10" fill="#a16207"/>
+          <rect x="104" y="200" width="112" height="8" rx="4" fill="#a16207" opacity=".8"/>
+          <rect x="104" y="214" width="140" height="7" rx="3.5" fill="#d6d3d1"/>
+          <rect x="66" y="250" width="140" height="26" rx="13" fill="#c2410c"/>
+          <rect x="80" y="259" width="112" height="8" rx="4" fill="#fff7ed" opacity=".9"/>
+          <path d="M340 60c42 20 46 70 22 96" fill="none" stroke="#fdba74" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+          <circle cx="366" cy="164" r="7" fill="#c2410c"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <div class="content">
+
+      <section class="sec" id="overview">
+        <div class="sec-head">
+          <h2>这轮假期瓜都在争什么：四件事的骨架</h2>
+          <span class="kicker">OVERVIEW</span>
+        </div>
+        <p class="sec-intro">把 11 月 1 日至 8 日被转发最多的四条线索并排放一次。每条只留最硬的一句，谁说了什么、哪一步还缺证据，后面的板块才展开。</p>
+        <div class="grid g2">
+          <article class="card">
+            <span class="tag t-fact">现场</span><span class="tag">黄山</span>
+            <h3>西海大峡谷 11 月 2 日 15:20 排队冲突</h3>
+            <p>黄山风景区管委会 11 月 3 日通报：当日西海大峡谷下行段因雨雾封闭，游客集中滞留，2 名游客与引导员发生口角，未发生推搡，现场增派 6 名工作人员分流。散客团队“徽州慢行”领队称队伍里有人被拍了脸。</p>
+          </article>
+          <article class="card">
+            <span class="tag t-resp">回应</span><span class="tag">杭州</span>
+            <h3>宋城夜游退票差额 58 元</h3>
+            <p>11 月 4 日，杭州游客在小红书晒订单：景区内《宋城千古情》因设备检修停演一场，退票只退 58 元差价。景区客服 11 月 5 日回电称按套票拆分价执行，退差细则在购票页第 9 条，用户称购票时未展开。</p>
+          </article>
+          <article class="card">
+            <span class="tag t-rumor">待核实</span><span class="tag">成都</span>
+            <h3>玉林“霸王餐”视频 11 月 6 日反转</h3>
+            <p>11 月 5 日一段 17 秒视频称玉林某串串店“游客吃完不付钱”，11 月 6 日店家本人发抖音说明是熟客手机没电、次日补付，视频已删。原视频发布者未再回应，转发量已过 4.2 万。</p>
+          </article>
+          <article class="card">
+            <span class="tag t-fact">现场</span><span class="tag">洛阳</span>
+            <h3>龙门石窟无人机盘旋 11 月 7 日</h3>
+            <p>11 月 7 日 10:40，龙门石窟西山石窟区一架无人机在卢舍那大佛前低空盘旋约 40 秒，景区安保当场劝离飞手。景区提示牌写明禁飞，飞手称“没注意牌子”，现场视频由游客账号发布。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec" id="pick">
+        <div class="sec-head">
+          <h2>精选内容推荐：先看这四篇</h2>
+          <a class="more" href="/#deep">更多解析 →</a>
+        </div>
+        <div class="grid g3">
+          <article class="card">
+            <span class="tag">黄山限流</span>
+            <h3>西海大峡谷排队 40 分钟，封不封该由谁先说</h3>
+            <p>把 11 月 2 日的封闭通知时间、现场广播内容和游客抵达时间三样摆在一起，能看出信息差发生在哪一段。</p>
+            <div class="meta"><span>11-03</span><span>阅读 3 分钟</span></div>
+          </article>
+          <article class="card">
+            <span class="tag">宋城退票</span>
+            <h3>套票拆分价 58 元，是怎么算出来的</h3>
+            <p>购票页第 9 条的退改说明被截了图，拆开看演出票与景区门票的定价比例，58 元并非随口报数。</p>
+            <div class="meta"><span>11-05</span><span>阅读 4 分钟</span></div>
+          </article>
+          <article class="card">
+            <span class="tag">玉林串串</span>
+            <h3>17 秒视频删了，4.2 万次转发还在</h3>
+            <p>视频删除不等于影响消失。记录店家补付凭证、平台处理进度和原发布者沉默的三种处理方式。</p>
+            <div class="meta"><span>11-06</span><span>阅读 3 分钟</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec" id="latest">
+        <div class="sec-head">
+          <h2>最新更新：48 小时内的九条</h2>
+          <span class="kicker">LATEST</span>
+        </div>
+        <ul class="news-list">
+          <li><time>11-08 02:40</time><div><b>西湖断桥保安喊话原视频放出</b><span>当事游客账号发布 1 分 42 秒完整版，此前流传的 23 秒为其中一段。</span></div></li>
+          <li><time>11-07 21:15</time><div><b>龙门石窟飞手被劝离后书面检讨</b><span>景区称按《无人驾驶航空器飞行管理暂行条例》移交属地处理，未罚款。</span></div></li>
+          <li><time>11-07 16:02</time><div><b>玉林串串店补付凭证截图公开</b><span>金额 186 元，支付时间显示 11 月 5 日 22:47，与店家说法一致。</span></div></li>
+          <li><time>11-07 11:30</time><div><b>宋城景区更新退改说明页</b><span>第 9 条前增加“演出停演的差价计算示例”，含 58 元一档。</span></div></li>
+          <li><time>11-06 19:48</time><div><b>黄山管委会再发一条分流提示</b><span>明确雨雾天气西海大峡谷下行段“只出不进”，广播每 10 分钟一次。</span></div></li>
+          <li><time>11-06 14:10</time><div><b>“霸王餐”原视频被平台下架</b><span>页面显示“内容存在争议，暂不可见”，未公开处置理由。</span></div></li>
+          <li><time>11-05 22:47</time><div><b>玉林熟客完成补付</b><span>店家确认收到 186 元，表示不再追究。</span></div></li>
+          <li><time>11-05 09:20</time><div><b>宋城客服首次回电</b><span>向投诉游客说明拆分价来源，未承诺额外补偿。</span></div></li>
+          <li><time>11-03 18:00</time><div><b>黄山发布首份情况通报</b><span>确认口角、否认推搡，公布增派人数与封闭时段。</span></div></li>
+        </ul>
+      </section>
+
+      <section class="sec" id="channels">
+        <div class="sec-head">
+          <h2>分类入口：按目的地找瓜</h2>
+          <span class="kicker">CHANNELS</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="/#deep"><b>山岳景区限流</b><span>黄山、泰山排队与封闭通知</span></a>
+          <a class="cat" href="/#deep"><b>主题乐园退改</b><span>宋城、方特套票拆分</span></a>
+          <a class="cat" href="/#guide"><b>古镇夜游</b><span>乌镇、西塘夜间排队</span></a>
+          <a class="cat" href="/#guide"><b>石窟与文物点</b><span>龙门、云冈无人机与拍摄</span></a>
+          <a class="cat" href="/#cmts"><b>地方小吃店</b><span>玉林串串、柳州螺蛳粉</span></a>
+          <a class="cat" href="/#cmts"><b>民宿退订</b><span>莫干山、大理订单纠纷</span></a>
+          <a class="cat" href="/#timeline"><b>短视频反转</b><span>17 秒视频、删帖与补证</span></a>
+          <a class="cat" href="/#faq"><b>票务规则</b><span>套票拆分、退票差价</span></a>
+          <a class="cat" href="/#faq"><b>禁飞提示</b><span>景区无人机管理</span></a>
+          <a class="cat" href="/#rank"><b>转发榜</b><span>本周传播量前五</span></a>
+          <a class="cat" href="/#guide"><b>导览与广播</b><span>现场提示语怎么读</span></a>
+          <a class="cat" href="/#overview"><b>假期出行现场</b><span>雨雾、检修、限流</span></a>
+        </div>
+      </section>
+
+      <section class="sec" id="deep">
+        <div class="feature">
+          <span class="f-tag">DEEP READ · 判断与依据</span>
+          <h2>一条“封路”通知晚到 40 分钟，争议就换了主角</h2>
+          <p>11 月 2 日黄山那场口角，吵的不是谁先动手，是封闭通知到底几点发出。管委会通报写的是 14:40 起对西海大峡谷下行段“只出不进”；现场游客的手机拍摄显示，14:52 广播仍在说“下行请沿指示牌通行”，15:20 才出现排队与劝阻。这 40 分钟的偏差，决定了游客的“不知道”是否站得住。下面把可核对的节点拆开。</p>
+
+          <h3>时间线核对：广播、通知与抵达时刻</h3>
+          <ul class="timeline" id="timeline">
+            <li><time>11-02 13:50</time><p>雨雾监测点在光明顶测得能见度低于 300 米，按景区内部流程触发下行段评估。</p></li>
+            <li><time>11-02 14:40</time><p>管委会通报所称的封闭起始时刻，“只出不进”在接待中心系统内标记生效。</p></li>
+            <li><time>11-02 14:52</time><p>游客拍摄的现场广播仍按旧提示语播“沿指示牌通行”，时长 28 秒。</p></li>
+            <li><time>11-02 15:20</time><p>排石亭附近开始排队，劝导员对下行游客逐位口头解释，现场约 60 人。</p></li>
+            <li><time>11-02 15:34</time><p>两名游客与引导员发生口角，游客称被拍摄面部，未发生推搡。</p></li>
+            <li><time>11-03 18:00</time><p>首份情况通报发布，公布增派 6 人、封闭时段与否认推搡。</p></li>
+          </ul>
+
+          <h3>说法差异：谁的记录更硬</h3>
+          <div class="compare">
+            <div class="cL">
+              <h3>游客一方</h3>
+              <ul>
+                <li>“下到谷底才看见牌子”，抵达 15:10 左右。</li>
+                <li>广播内容与后续通报不一致，认为被误导。</li>
+                <li>手机拍摄了 14:52 的广播，但未拍完整句。</li>
+              </ul>
+            </div>
+            <div class="cR">
+              <h3>管委会一方</h3>
+              <ul>
+                <li>系统内 14:40 已标记，属内部生效时间。</li>
+                <li>现场广播更新需指令下发到站点，存在延迟。</li>
+                <li>通报未说明内部标记到广播的时间差。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="claim">
+            <b>可被反驳的判断：</b>这 40 分钟里，游客缺少的不是“能不能下”的答案，而是“已经不能下”的时点。责任分担的关键不在劝导员态度，而在内部生效与对外告知之间存在一段无人负责的空档。若后续公布广播指令下发时间早于 14:52，此判断需要修正。
+          </div>
+
+          <h3>数据对比：同类限流通知的告知差</h3>
+          <table class="check-table">
+            <caption class="skip">三个景区限流通知的生效与告知时间对照</caption>
+            <thead><tr><th>景区</th><th>内部生效</th><th>首个对外提示</th><th>时间差</th></tr></thead>
+            <tbody>
+              <tr><td>黄山西海大峡谷（11-02）</td><td>14:40</td><td>14:52 广播旧语</td><td>≥12 分钟</td></tr>
+              <tr><td>泰山十八盘（10-04）</td><td>09:00</td><td>09:05 广播</td><td>5 分钟</td></tr>
+              <tr><td>华山长空栈道（10-03）</td><td>11:20</td><td>11:21 检票口口头</td><td>1 分钟</td></tr>
+            </tbody>
+          </table>
+          <p>参照泰山 5 分钟、华山 1 分钟的口径，黄山这 12 分钟并不算离谱，问题在于广播说反了方向。通报只写封闭时刻，没写广播何时改词，这也是现场游客最不舒服的一点。</p>
+
+          <div class="pullquote">黄山这轮信息里，事实层只有三样：封闭起始、广播原话、增派人数。其余“态度差”“被针对”都属转述或推测，评论里可以吵，核对时别混进去。</div>
+
+          <h3>规则前后变化：退改说明多了示例</h3>
+          <p>宋城这边正好提供了另一种参照。11 月 5 日客服回电仍按旧第 9 条处理，11 月 7 日退改说明页就加了“差价计算示例”。同样的 58 元，前一版是客服口头解释，后一版写进页面。说明规则本身没改，改的是可读性。对比黄山，景区缺的恰好是这一段“对外可读”的示例：封闭时刻有了，游客读到的却是没改词的广播。</p>
+        </div>
+      </section>
+
+      <section class="sec" id="guide">
+        <div class="sec-head">
+          <h2>体验指南：看这类瓜的四步</h2>
+          <span class="kicker">GUIDE</span>
+        </div>
+        <ol class="steps">
+          <li><div><b>先对时点，别对情绪</b><p>把封闭通知、广播原话、抵达时间三行抄下来。三行对不上，先存档，不急着站队。</p></div></li>
+          <li><div><b>分清“系统生效”和“游客知情”</b><p>系统里 14:40 生效，游客 15:10 才知道，这两件事都成立，争议往往就藏在这条缝里。</p></div></li>
+          <li><div><b>看到退票差额，去翻购票页第几条</b><p>宋城 58 元对应第 9 条拆分价，截图第 9 条原文比转述客服话更可靠。</p></div></li>
+          <li><div><b>遇到短视频反转，先找补付凭证</b><p>玉林串串 186 元、支付时间 22:47，凭证时间能对上店家说法的，比“已删除”三个字信息量大。</p></div></li>
+        </ol>
+      </section>
+
+      <section class="sec faq" id="faq">
+        <div class="sec-head">
+          <h2>FAQ：六个问得最多的问题</h2>
+          <span class="kicker">FAQ</span>
+        </div>
+        <details>
+          <summary>西海大峡谷封闭通知和广播为什么对不上？</summary>
+          <div class="fa-body">系统内 14:40 标记生效，广播实际到 15:20 前后才改词，现场游客 14:52 拍到的仍是旧提示语。管委会通报只公布封闭起始，未说明广播指令的下发时间，这段差口是争议的核心，不是态度问题。</div>
+        </details>
+        <details>
+          <summary>宋城套票退票只退 58 元合理吗？</summary>
+          <div class="fa-body">按购票页第 9 条的拆分价，58 元是演出票部分的差价。11 月 7 日页面增加了计算示例，规则没改、写法变了。是否合理取决于购票时是否展开过第 9 条，截图能说明用户当时看到多少。</div>
+        </details>
+        <details>
+          <summary>玉林串串“霸王餐”到底有没有逃单？</summary>
+          <div class="fa-body">店家 11 月 6 日自述为熟客手机没电、次日补付，11 月 5 日 22:47 收到 186 元并有凭证。原 17 秒视频已被平台下架，页面仅显示“内容存在争议”，未公开处置理由。目前可核对的是凭证时间，逃单指控缺少支撑。</div>
+        </details>
+        <details>
+          <summary>龙门石窟为什么禁止飞无人机？</summary>
+          <div class="fa-body">西山石窟区属文物保护区，现场提示牌写明禁飞，管理依据为《无人驾驶航空器飞行管理暂行条例》。11 月 7 日飞手称没注意牌子，被安保劝离并书面检讨，未罚款。禁飞不是景区自定，这点常被忽略。</div>
+        </details>
+        <details>
+          <summary>西湖断桥那条原视频为什么现在才放？</summary>
+          <div class="fa-body">当事游客 11 月 8 日 02:40 发布 1 分 42 秒完整版，此前传播的是 23 秒剪辑。完整版里能看到保安喊话前后的整段对话，剪辑版的语境与此不同，先看过完整版再评价态度更稳。</div>
+        </details>
+        <details>
+          <summary>这些事件的日期怎么核对？</summary>
+          <div class="fa-body">全部落在 11 月 1 日至 11 月 8 日之间，通报与回电日期按官方账号发布时间记。玉林凭证时间 22:47、黄山封闭 14:40、龙门劝离 10:40，都是原样抄录，未做换算。</div>
+        </details>
+      </section>
+
+      <section class="sec" id="cmts">
+        <div class="sec-head">
+          <h2>用户评论：九条里三条在吐槽条目本身</h2>
+          <span class="kicker">COMMENTS</span>
+        </div>
+        <div class="cmts">
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#0f766e">鲁</span><b>鲁中行人</b><time>11-07 22:10</time></div>
+            <span class="ref">指向：黄山 14:52 广播</span>
+            <p>14:52 那条广播我听了两遍，确实还在说“沿指示牌通行”，这跟通报的 14:40 差得有点远，光解释劝导员态度没用。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#c2410c">阿</span><b>阿柚不加冰</b><time>11-07 18:33</time></div>
+            <span class="ref">指向：宋城第 9 条</span>
+            <p>购票页第 9 条我点开过，字很小但真有示例，58 元的来历写得清楚。问题是没人会主动点开，景区不如把示例放到确认页。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#78716c">风</span><b>风过玉林</b><time>11-06 23:41</time></div>
+            <p>录 17 秒就发的人删得倒快，4.2 万转发谁负责？熟客补付凭证都贴出来了，这波站店家。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#a16207">龙</span><b>龙门山脚</b><time>11-07 12:05</time></div>
+            <span class="ref">指向：无人机劝离 10:40</span>
+            <p>卢舍那大佛前面飞 40 秒，安保劝离算温柔了。没注意牌子这话站不住，入口三块提示牌。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#4338ca">念</span><b>念旧的充电宝</b><time>11-06 09:12</time></div>
+            <p>说实话这四件事热度都不高，黄山那场口角也就 60 来人，被写得更像大冲突。轻量版倒还算克制。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#be123c">西</span><b>西湖边三号</b><time>11-08 08:20</time></div>
+            <span class="ref">指向：断桥 1 分 42 秒原视频</span>
+            <p>完整版看完，保安前半段语气挺冲，后半段在帮忙指路。23 秒版本只截了冲的那段，剪辑这事该说清楚。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#0369a1">冰</span><b>冰糖雪梨不冰</b><time>11-05 20:00</time></div>
+            <p>宋城退 58 元的帖子我存了，客服回电那句“按第 9 条”说得机械。规则写清楚比嘴上解释有用。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#65a30d">山</span><b>山不转路转</b><time>11-04 15:47</time></div>
+            <span class="ref">指向：黄山 15:34 口角</span>
+            <p>被拍脸这点最该管。劝导员对不下十几个人，镜头对着谁都不舒服，这条比排队本身值得说。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar" style="background:#9f1239">过</span><b>过路人丙</b><time>11-03 19:30</time></div>
+            <p>增派 6 人这个数字挺具体，但没说原来几个人。单看增派人数判断不了力度，通报可以再细一点。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="news">
+        <div class="sec-head">
+          <h2>相关资讯：同一事件的另一层</h2>
+          <span class="kicker">RELATED NEWS</span>
+        </div>
+        <ul class="news-list">
+          <li><time>11-07</time><div><b>黄山景区雨雾预警标准公开</b><span>能见度 300 米为下行段评估线，与 11 月 2 日 13:50 的观测值对应。</span></div></li>
+          <li><time>11-06</time><div><b>杭州文旅热线 10 月受理演唱会与演出退改 214 件</b><span>其中套票拆分争议占 31 件，宋城一例被并入统计。</span></div></li>
+          <li><time>11-05</time><div><b>平台上线“争议内容”提示样式</b><span>玉林视频下架后的页面样式，属新提示模板，尚未公布适用范围。</span></div></li>
+          <li><time>11-04</time><div><b>洛阳文物区无人机管理提示牌增至 6 块</b><span>西山石窟入口新增 2 块，与 11 月 7 日劝离事件无直接因果，时间上并列。</span></div></li>
+        </ul>
+      </section>
+
+      <section class="sec" id="rank">
+        <div class="sec-head">
+          <h2>本周转发榜：五条按传播量排</h2>
+          <span class="kicker">RANK</span>
+        </div>
+        <ol class="rank">
+          <li><b>玉林串串“霸王餐”17 秒视频</b><em>4.2 万转</em></li>
+          <li><b>断桥保安喊话 23 秒剪辑</b><em>1.8 万转</em></li>
+          <li><b>西海大峡谷排队 40 分钟现场</b><em>9600 转</em></li>
+          <li><b>宋城退票只退 58 元订单截图</b><em>7300 转</em></li>
+          <li><b>龙门石窟无人机 40 秒盘旋</b><em>5100 转</em></li>
+        </ol>
+      </section>
+
+      <section class="sec" id="rec">
+        <div class="sec-head">
+          <h2>相关推荐：按关键词找</h2>
+          <span class="kicker">TAGS</span>
+        </div>
+        <div class="tagcloud">
+          <a href="/#deep">西海大峡谷封闭时间</a>
+          <a href="/#faq">宋城套票拆分价退票</a>
+          <a href="/#cmts">玉林串串补付凭证</a>
+          <a href="/#news">龙门石窟无人机禁飞区</a>
+          <a href="/#timeline">黄山广播旧提示语</a>
+          <a href="/#guide">假期景区限流通知怎么看</a>
+          <a href="/#rank">本周转发榜</a>
+          <a href="/#faq">演出停演退差价规则</a>
+          <a href="/#overview">雨雾天气下行段评估</a>
+          <a href="/#cmts">断桥完整视频 1 分 42 秒</a>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side" aria-label="侧栏">
+      <div class="side-sticky">
+        <div class="panel">
+          <h3>本页导航</h3>
+          <ul class="toc" id="toc">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#pick">精选内容推荐</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#cmts">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">转发榜</a></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>信息分层说明</h3>
+          <p class="side-note"><span class="tag t-fact">现场</span>有视频或通报时间可对。<br><span class="tag t-resp">回应</span>当事方公开表态。<br><span class="tag t-warn">转述</span>二次传播的说法。<br><span class="tag t-rumor">待核实</span>缺原始材料。</p>
+        </div>
+        <div class="panel">
+          <h3>核对提示</h3>
+          <p class="side-note"><b>14:40</b> 封闭系统生效<br><b>14:52</b> 广播旧提示语<br><b>22:47</b> 玉林补付到账<br>三个时间点，是全页最硬的三处锚。</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-brand">
+          <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+            <rect width="40" height="40" rx="11" fill="#292524"/>
+            <path d="M11 12.5c5.6 2.3 12.4 2.3 18 0v6.6c-5.6 2.3-12.4 2.3-18 0z" fill="#fdba74"/>
+            <path d="M11 12.5v15c5.6 2.3 12.4 2.3 18 0v-15" fill="none" stroke="#c2410c" stroke-width="2.4"/>
+          </svg>
+          <b>五一在线吃瓜轻量版</b>
+        </div>
+        <p class="ft-desc">假期围观的一种省力做法：把现场、回应、转述分开，看不清的先标注，读得完才算数。</p>
+      </div>
+      <div class="ft-cols">
+        <div>
+          <h4>事件线索</h4>
+          <ul>
+            <li><a href="/#overview">黄山限流</a></li>
+            <li><a href="/#deep">宋城退票</a></li>
+            <li><a href="/#cmts">玉林串串</a></li>
+            <li><a href="/#news">龙门无人机</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>阅读辅助</h4>
+          <ul>
+            <li><a href="/#timeline">时间线</a></li>
+            <li><a href="/#guide">看瓜四步</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#rank">转发榜</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>栏目</h4>
+          <ul>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#rec">关键词索引</a></li>
+            <li><a href="/#top">回到页头</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>示例数据说明：本页条目、账号与评论均为演示用示例，涉及数字与时间仅供格式参考，实际以当事方发布为准。</span>
+      <span class="upd">页面更新 2026-11-08 · 对应更新项：断桥原视频、「霸王餐」补付凭证</span>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 五一在线吃瓜轻量版</span>
+      <span>轻量阅读 · 无自动播放</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var news = [
+    {t:"黄山 西海大峡谷 封闭 广播 排队 口角",u:"/#deep"},
+    {t:"杭州 宋城 千古情 退票 拆分价 58 元",u:"/#news"},
+    {t:"成都 玉林 串串 霸王餐 补付 186 元",u:"/#cmts"},
+    {t:"洛阳 龙门石窟 无人机 禁飞 劝离",u:"/#news"},
+    {t:"西湖 断桥 保安 喊话 原视频 1 分 42 秒",u:"/#latest"},
+    {t:"泰山 华山 限流 通知 时间差",u:"/#deep"},
+    {t:"套票 退改 说明 第 9 条 示例",u:"/#faq"},
+    {t:"雨雾 能见度 300 米 下行段 评估",u:"/#guide"},
+    {t:"转发榜 传播量 剪辑",u:"/#rank"}
+  ];
+  var q = document.getElementById('q');
+  var out = document.getElementById('searchOut');
+  function run(){
+    var v = (q.value || '').trim().toLowerCase();
+    if(!v){ out.textContent = ''; return; }
+    var hits = news.filter(function(n){ return n.t.toLowerCase().indexOf(v) > -1; });
+    if(hits.length === 0){
+      out.textContent = '没有找到“' + q.value.trim() + '”相关条目，试试景区名或事件词，如“黄山”“退票”。';
+      return;
+    }
+    out.innerHTML = '找到 ' + hits.length + ' 条：' + hits.map(function(n){
+      return '<a href="' + n.u + '">' + n.t.split(' ').slice(0,3).join(' ') + '</a>';
+    }).join(' · ');
+  }
+  document.getElementById('qBtn').addEventListener('click', run);
+  q.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); run(); } });
+  q.addEventListener('input', function(){ if(!q.value.trim()) out.textContent=''; });
+
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('nav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '收起' : '菜单';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 720){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.textContent = '菜单';
+    }
+  });
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    toTop.classList.toggle('show', window.scrollY > 500);
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('#toc a'));
+  var targets = tocLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id) || null;
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          tocLinks.forEach(function(a){ a.classList.remove('active'); });
+          var i = targets.indexOf(en.target);
+          if(i > -1) tocLinks[i].classList.add('active');
+        }
+      });
+    }, {rootMargin:'-130px 0px -60% 0px', threshold:0});
+    targets.forEach(function(t){ if(t) io.observe(t); });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "五一在线吃瓜轻量版",
+  "description": "假期舆论事件速览，按现场、回应、转述分层呈现。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "西海大峡谷封闭通知和广播为什么对不上？",
+      "acceptedAnswer": {"@type":"Answer","text":"系统内 14:40 标记生效，广播实际到 15:20 前后才改词，现场游客 14:52 拍到的仍是旧提示语。通报未说明广播指令的下发时间。"}
+    },
+    {
+      "@type": "Question",
+      "name": "宋城套票退票只退 58 元合理吗？",
+      "acceptedAnswer": {"@type":"Answer","text":"按购票页第 9 条的拆分价，58 元是演出票部分的差价。11 月 7 日页面增加了计算示例，规则没改、写法变了。"}
+    },
+    {
+      "@type": "Question",
+      "name": "玉林串串“霸王餐”到底有没有逃单？",
+      "acceptedAnswer": {"@type":"Answer","text":"店家 11 月 6 日自述为熟客手机没电、次日补付，11 月 5 日 22:47 收到 186 元并有凭证。原视频已被平台下架。"}
+    },
+    {
+      "@type": "Question",
+      "name": "龙门石窟为什么禁止飞无人机？",
+      "acceptedAnswer": {"@type":"Answer","text":"西山石窟区属文物保护区，现场提示牌写明禁飞，依据为《无人驾驶航空器飞行管理暂行条例》。11 月 7 日飞手被劝离并书面检讨。"}
+    },
+    {
+      "@type": "Question",
+      "name": "西湖断桥那条原视频为什么现在才放？",
+      "acceptedAnswer": {"@type":"Answer","text":"当事游客 11 月 8 日 02:40 发布 1 分 42 秒完整版，此前传播的是 23 秒剪辑，语境不同。"}
+    },
+    {
+      "@type": "Question",
+      "name": "这些事件的日期怎么核对？",
+      "acceptedAnswer": {"@type":"Answer","text":"全部落在 11 月 1 日至 11 月 8 日之间，通报与回电日期按官方账号发布时间记，凭证与封闭时刻原样抄录。"}
+    }
+  ]
+}
+</script>
+</body>
+  </html>
